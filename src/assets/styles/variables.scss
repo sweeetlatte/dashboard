@@ -1,0 +1,27 @@
+$primary: #cec266;
+$secondary: #ba6039;
+$green: #a2c96b;
+$red: #e58d7b;
+$yellow: #f7d483;
+$bg-light: #fdf7ee;
+$bg-dark: #10120f;
+$neutral1: #ffffff;
+$neutral2: #363a34;
+
+[data-theme='light-theme'] {
+  background-color: #fdf7ee;
+  color: #000;
+  --secondary-text-1: #777e89;
+  --secondary-text-2: #767e89;
+  --card-bg: #ffffff;
+  --card-text: #000;
+}
+
+[data-theme='dark-theme'] {
+  background-color: #10120f;
+  color: #ffffff;
+  --secondary-text-1: #adb0bb;
+  --secondary-text-2: #767e89;
+  --card-bg: #363a34;
+  --card-text: #e6e5e8;
+}

@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+p {
+  margin: unset !important;
+}
+
+.card {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--card-text);
+  background-color: var(--card-bg);
+}

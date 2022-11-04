@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        padding: 25px;
+        background-color: #fdf7ee;
+        font-size: 25px;
+      }
+
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: #363a34;
+        border-radius: 10px;
+        box-shadow: rgba(16, 18, 15, 0.1) 0px 8px 24px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Toggle Dark/Light Mode</h2>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+    <div></div>
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle('dark-mode');
+      }
+    </script>
+  </body>
+</html>
