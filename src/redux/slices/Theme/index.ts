@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const theme = createSlice({
-  name: 'cart',
+  name: 'theme',
   initialState: 'dark-theme',
   reducers: {
     toggleTheme: (state) => {
