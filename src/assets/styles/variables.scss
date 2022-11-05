@@ -3,11 +3,11 @@ $secondary: #ba6039;
 $green: #a2c96b;
 $red: #e58d7b;
 $yellow: #f7d483;
-$bg-light: #fdf7ee;
-$bg-dark: #10120f;
-$neutral1: #ffffff;
-$neutral2: #363a34;
 $header-text: #949db2;
+$neutral1: #ffffff;
+$neutral2: #767e89;
+
+$shadow: rgb(0 0 0 / 8%) 1px 2px 10px;
 
 [data-theme='light-theme'] {
   background-color: #fdf7ee;
@@ -16,13 +16,15 @@ $header-text: #949db2;
   --secondary-text-2: #767e89;
   --card-bg: #ffffff;
   --card-text: #000;
+  --dropdown-bg: #ffffff;
 }
 
 [data-theme='dark-theme'] {
   background-color: #10120f;
   color: #ffffff;
-  --secondary-text-1: #adb0bb;
-  --secondary-text-2: #767e89;
+  --secondary-text-1: #767e89;
+  --secondary-text-2: #adb0bb;
   --card-bg: #363a34;
   --card-text: #e6e5e8;
+  --dropdown-bg: #4a4e48;
 }
