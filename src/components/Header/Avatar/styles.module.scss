@@ -1,0 +1,27 @@
+.avatarWrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  > * + * {
+    margin-left: 8px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border-radius: 9999px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 9999px;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}

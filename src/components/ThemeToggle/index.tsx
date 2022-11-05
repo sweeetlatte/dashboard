@@ -3,7 +3,7 @@ import React from 'react';
 
 import { toggleTheme } from '../../redux/actions';
 import { useAppDispatch } from '../../redux/store';
-import style from './styles.module.scss';
+import styles from './styles.module.scss';
 
 function ThemeToggle() {
   const dispatch = useAppDispatch();
@@ -13,8 +13,8 @@ function ThemeToggle() {
 
   return (
     <>
-      <div className={style.checkboxWrapper5}>
-        <div className={style.check}>
+      <div className={styles.checkboxWrapper5}>
+        <div className={styles.check}>
           <input id='check-5' type='checkbox' onChange={handleToggle} />
           <label htmlFor='check-5'></label>
         </div>

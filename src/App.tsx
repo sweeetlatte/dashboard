@@ -1,9 +1,9 @@
-import "./App.scss";
+import './App.scss';
 
-import React from "react";
+import React from 'react';
 
-import { useAppSelector } from "./redux/store";
-import AppRoutes from "./routes/routes";
+import { useAppSelector } from './redux/store';
+import AppRoutes from './routes/routes';
 
 function App() {
   const theme = useAppSelector((state) => state.theme);

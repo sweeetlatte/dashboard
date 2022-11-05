@@ -1,15 +1,17 @@
-import "./styles.scss";
+import './styles.scss';
 
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-import Sidebar from "../components/Sidebar";
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 
 const Layout = () => {
   return (
-    <main className="layout">
+    <main className='layout'>
+      <Header />
       <Sidebar />
-      <div className="layout__main">
+      <div className='layout__main'>
         <Outlet />
       </div>
     </main>
