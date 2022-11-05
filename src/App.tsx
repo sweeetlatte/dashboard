@@ -1,17 +1,16 @@
-import './App.scss';
+import "./App.scss";
 
-import React from 'react';
+import React from "react";
 
-import ThemeToggle from './components/ThemeToggle';
-import { useAppSelector } from './redux/store';
+import { useAppSelector } from "./redux/store";
+import AppRoutes from "./routes/routes";
 
 function App() {
   const theme = useAppSelector((state) => state.theme);
 
   return (
     <div className={`App ${theme}`} data-theme={theme}>
-      <ThemeToggle />
-      <div className='card'>bfjnweflew</div>
+      <AppRoutes />
     </div>
   );
 }
