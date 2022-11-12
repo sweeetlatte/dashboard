@@ -12,6 +12,7 @@ $shadow: rgb(0 0 0 / 8%) 1px 2px 10px;
 
 [data-theme='light-theme'] {
   background-color: #fdf7ee;
+  --background-color: #fdf7ee;
   color: #000;
   --secondary-text-1: #777e89;
   --secondary-text-2: #767e89;
@@ -22,6 +23,7 @@ $shadow: rgb(0 0 0 / 8%) 1px 2px 10px;
 
 [data-theme='dark-theme'] {
   background-color: #10120f;
+  --background-color: #10120f;
   color: #ffffff;
   --secondary-text-1: #767e89;
   --secondary-text-2: #adb0bb;
