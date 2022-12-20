@@ -12,14 +12,16 @@ function ThemeToggle() {
   };
 
   return (
-    <>
+    <div className={styles.themeToggleContainer}>
+      <div>Dark</div>
       <div className={styles.checkboxWrapper5}>
         <div className={styles.check}>
           <input id='check-5' type='checkbox' onChange={handleToggle} />
           <label htmlFor='check-5'></label>
         </div>
       </div>
-    </>
+      <div>Light</div>
+    </div>
   );
 }
 

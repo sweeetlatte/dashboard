@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Layout from '../layouts';
+import Layout from '../layouts/Layout';
 import APP_ROUTE from './app.routes';
 
 const Analytical = lazy(() => import('../pages/Analytical'));

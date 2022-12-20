@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables.scss';
+
+.sectionTitle {
+  color: $neutral4;
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+
+  > * + * {
+    margin-left: 20px;
+  }
+}
