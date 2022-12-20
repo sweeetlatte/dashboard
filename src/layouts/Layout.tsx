@@ -10,9 +10,13 @@ const Layout = () => {
   return (
     <main className='layout'>
       <Header />
-      <Sidebar />
       <div className='layout__main'>
-        <Outlet />
+        <div className='layout__sidebar'>
+          <Sidebar />
+        </div>
+        <div className='layout__outlet'>
+          <Outlet />
+        </div>
       </div>
     </main>
   );

@@ -1,0 +1,30 @@
+@import '../assets/styles/variables.scss';
+
+.layout {
+  &__main {
+    display: flex;
+    padding: 30px;
+  }
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    flex-basis: 20%;
+    padding: 24px 16px;
+    box-shadow: $shadow-card;
+    border-radius: $radius-card;
+    background-color: var(--card-bg);
+
+    > * + * {
+      margin-top: 18px;
+    }
+  }
+
+  &__outlet {
+    box-sizing: border-box;
+    flex-basis: 80%;
+  }
+}
