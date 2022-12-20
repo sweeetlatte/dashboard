@@ -6,6 +6,7 @@ import APP_ROUTE from './app.routes';
 
 const Analytical = lazy(() => import('../pages/Analytical'));
 const Modern = lazy(() => import('../pages/Modern'));
+const ECommerce = lazy(() => import('../pages/ECommerce'));
 
 export default function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ export default function AppRoutes() {
             <Route path='/' element={<Layout />}>
               <Route index element={<Analytical />} />
               <Route path={APP_ROUTE.MODERN} element={<Modern />} />
+              <Route path={APP_ROUTE.ECOMMERCE} element={<ECommerce />} />
             </Route>
           </Route>
         </Routes>
