@@ -15,7 +15,7 @@ export const Pages = [
     sectionId: 1,
     icon: <Icon.PieChart size={20} />,
     title: 'Analytical',
-    path: APP_ROUTE.ANALYTICAL,
+    path: '/',
   },
   {
     id: 3,
