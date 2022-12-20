@@ -78,7 +78,7 @@ export default function Avatar() {
                 </div>
               ))}
             </div>
-            <button className='button'>Logout</button>
+            <button className='button'>Sign Out</button>
           </div>
         </>
       ) : (
