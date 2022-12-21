@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
-
 import { toggleTheme } from '../../redux/actions';
 import { useAppDispatch } from '../../redux/store';
 import styles from './styles.module.scss';

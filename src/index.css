@@ -18,7 +18,7 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ba6039;
+  background: var(--card-text);
 }
 
 /* Handle */

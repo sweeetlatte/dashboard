@@ -1,7 +1,5 @@
 import './App.scss';
 
-import React from 'react';
-
 import { toggleMask } from './redux/actions';
 import { useAppDispatch, useAppSelector } from './redux/store';
 import AppRoutes from './routes/routes';
