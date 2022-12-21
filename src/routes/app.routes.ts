@@ -30,6 +30,10 @@ const APP_ROUTE = {
   COLUMN_CHART: 'column-chart',
   CANDLESTICK_CHART: 'candlestick-chart',
   RADIAL_RADAR_CHART: 'radial-radar-chart',
+  SIGN_IN: 'sign-in',
+  SIGN_UP: 'sign-ip',
+  RESET_PASSWORD: 'reset-password',
+  ERROR: 'error',
 };
 
 export default APP_ROUTE;
