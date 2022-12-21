@@ -1,10 +1,9 @@
-// import CardHello from '../../components/CardHello';
+import CardHello from '../../../components/CardHello';
 
 export default function Analytical() {
   return (
     <>
-      <div>Analytical</div>
-      {/* <CardHello /> */}
+      <CardHello />
     </>
   );
 }
