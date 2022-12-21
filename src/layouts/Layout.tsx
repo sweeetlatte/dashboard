@@ -12,7 +12,9 @@ const Layout = () => {
       <Header />
       <div className='layout__main'>
         <div className='layout__sidebar'>
-          <Sidebar />
+          <div className='layout__custom-scrollbar'>
+            <Sidebar />
+          </div>
         </div>
         <div className='layout__outlet'>
           <Outlet />
