@@ -1,0 +1,23 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.helloContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text {
+    @include title;
+    text-align: left;
+
+    button {
+        @include button;
+        width: fit-content;
+        margin-top: 18px;
+    }
+  }
+
+  .img {
+    flex-basis: 36%;
+  }
+}
