@@ -1,7 +1,7 @@
 import reading from '../../assets/illustrations/review-report.png';
 import styles from './styles.module.scss';
 
-export default function CardHello() {
+export default function Hello() {
   return (
     <div className={styles.helloContainer}>
       <div className={styles.text}>

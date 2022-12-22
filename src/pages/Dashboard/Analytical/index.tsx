@@ -1,4 +1,5 @@
-import CardHello from '../../../components/CardHello';
+import Earning from '../../../components/Earnings';
+import Hello from '../../../components/Hello';
 import styles from './styles.module.scss';
 
 export default function Analytical() {
@@ -7,10 +8,10 @@ export default function Analytical() {
       <div className={styles.analytical1}>
         <div className={styles.analytical1_leftContainer}>
           <div className={styles.analytical1_topComponent}>
-            <CardHello />
+            <Hello />
           </div>
           <div className={styles.analytical1_bottomComponent}>
-            <div>left</div>
+            <Earning />
             <div>right</div>
           </div>
         </div>
