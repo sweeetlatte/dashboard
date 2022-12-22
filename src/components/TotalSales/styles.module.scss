@@ -1,35 +1,33 @@
 @import '../../assets/styles/variables.scss';
 @import '../../assets/styles/index.scss';
 
-.totalSalesContainer {
-  .title,
-  .detail {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.title,
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  @include title;
+  border-bottom: solid 1px $neutral3;
+  padding-bottom: 24px;
+
+  .selectBox {
+    font-size: 16px;
+  }
+}
+
+.detail {
+  padding: 18px 0;
+
+  .text {
+    font-size: 14px;
+    color: var(--card-subtext);
   }
 
-  .title {
-    @include title;
-    border-bottom: solid 1px $neutral3;
-    padding-bottom: 18px;
-
-    .selectBox {
-      font-size: 16px;
-    }
-  }
-
-  .detail {
-    padding: 24px 0;
-
-    .text {
-      font-size: 14px;
-      color: var(--card-subtext);
-    }
-
-    .number {
-      font-size: 24px;
-      letter-spacing: 1px;
-    }
+  .number {
+    font-size: 24px;
+    letter-spacing: 1px;
   }
 }
