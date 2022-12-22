@@ -29,7 +29,7 @@
 
   .modern1 {
     &_leftComponent {
-      flex-basis: 51.5%;
+      flex-basis: 46%;
     }
 
     &_middleComponent {
@@ -37,18 +37,18 @@
     }
 
     &_rightComponent {
-      flex-basis: 28.5%;
+      flex-basis: 34%;
     }
   }
 
   .modern2 {
     &_leftComponent {
-      flex-basis: 66.67%;
+      flex-basis: 65.5%;
       @include card;
     }
 
     &_rightContainer {
-      flex-basis: 33.33%;
+      flex-basis: 34.5%;
 
       > * {
         @include card;
@@ -62,11 +62,11 @@
 
   .modern3 {
     &_leftComponent {
-      flex-basis: 33.33%;
+      flex-basis: 31.25%;
     }
 
     &_rightComponent {
-      flex-basis: 66.67%;
+      flex-basis: 68.75%;
     }
   }
 
