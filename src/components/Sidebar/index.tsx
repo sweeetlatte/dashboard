@@ -7,7 +7,7 @@ import { Sections } from './sections';
 import styles from './styles.module.scss';
 
 export default function Sidebar() {
-  const [indexSidebar, setIndexSidebar] = useState<number>(1);
+  const [indexSidebar, setIndexSidebar] = useState<number>(2);
 
   return (
     <>
