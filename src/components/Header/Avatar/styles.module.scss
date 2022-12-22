@@ -1,4 +1,5 @@
 @import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/index.scss';
 
 .userWrap {
   position: relative;
@@ -43,7 +44,7 @@
     color: var(--card-text);
     padding: 30px;
     border-radius: 5px;
-    box-shadow: $shadow;
+    box-shadow: var(--shadow);
     z-index: 3;
     animation: showDropdown 0.5s both;
     transform-origin: top right;
@@ -139,6 +140,10 @@
           }
         }
       }
+    }
+
+    .button {
+      @include button;
     }
   }
 }

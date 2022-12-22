@@ -13,7 +13,7 @@
     padding: 24px 0 24px 16px;
     height: calc(100vh - 140px);
     width: calc(100vw - 80% - 68px);
-    box-shadow: $shadow-card;
+    box-shadow: var(--shadow-card);
     border-radius: $radius-card;
     background-color: var(--card-bg);
   }

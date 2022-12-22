@@ -10,9 +10,6 @@ $neutral2: #767e89;
 $neutral3: #767e8959;
 $neutral4: #87898e;
 
-$shadow: rgba(116, 116, 116, 0.08) 1px 2px 10px;
-$shadow-card: rgba(116, 116, 116, 0.08) 5px 6px 9px;
-
 $radius-card: 16px;
 $radius-active-tab: 5px;
 
@@ -25,6 +22,8 @@ $radius-active-tab: 5px;
   --card-text: #000;
   --dropdown-bg: #ffffff;
   --icon-bg: #f6f6f6;
+  --shadow-card: rgba(116, 116, 116, 0.08) 5px 5px 9px;
+  --shadow: rgba(116, 116, 116, 0.08) 1px 2px 10px;
 }
 
 [data-theme='dark-theme'] {
@@ -36,4 +35,6 @@ $radius-active-tab: 5px;
   --card-text: #e6e5e8;
   --dropdown-bg: #4a4e48;
   --icon-bg: #ffffff;
+  --shadow-card: rgba(180, 180, 180, 0.08) 5px 5px 9px;
+  --shadow: rgba(150, 150, 150, 0.18) 0px 3px 27px;
 }

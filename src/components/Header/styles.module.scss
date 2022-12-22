@@ -9,7 +9,7 @@
   width: 100%;
   padding: 0px 30px;
   color: $header-text;
-  box-shadow: $shadow;
+  box-shadow: var(--shadow);
   background-color: var(--card-bg);
 
   >* {
