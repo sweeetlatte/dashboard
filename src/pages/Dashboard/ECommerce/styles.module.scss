@@ -1,0 +1,64 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/index.scss';
+
+.ecomContainer {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    display: flex;
+    width: 100%;
+
+    > * + * {
+      margin-left: 24px;
+    }
+  }
+
+  > * + * {
+    margin-top: 24px;
+  }
+
+  .ecom1,
+  .ecom3,
+  .ecom4 {
+    > * {
+      @include card;
+    }
+  }
+
+  .ecom1,
+  .ecom3 {
+    &_leftComponent {
+      flex-basis: 31.25%;
+    }
+
+    &_rightComponent {
+      flex-basis: 68.75%;
+    }
+  }
+
+  .ecom2 {
+    &_leftComponent {
+      flex-basis: 65.5%;
+      @include card;
+    }
+
+    &_rightContainer {
+      flex-basis: 34.5%;
+
+      > * {
+        @include card;
+      }
+
+      .ecom2_topComponent {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .ecom4 {
+    > * {
+      flex-basis: 33.33%;
+    }
+  }
+}
