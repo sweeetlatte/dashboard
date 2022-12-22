@@ -18,11 +18,9 @@ p {
   margin: unset !important;
 }
 
-.card {
-  margin: 15px;
-  padding: 20px;
-  border-radius: 20px;
-  color: var(--card-text);
+@mixin card {
+  padding: 24px;
+  border-radius: $radius-card;
   background-color: var(--card-bg);
 }
 

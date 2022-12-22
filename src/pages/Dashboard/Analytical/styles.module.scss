@@ -1,5 +1,73 @@
-.analytical1 {
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/index.scss';
+
+.analyticalContainer {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+
+  > * {
+    display: flex;
+    width: 100%;
+
+    > * + * {
+      margin-left: 24px;
+    }
+  }
+
+  > * + * {
+    margin-top: 24px;
+  }
+
+  .analytical1 {
+    > * {
+      flex-basis: 50%;
+    }
+
+    &_leftContainer {
+      .analytical1_topComponent {
+        margin-bottom: 24px;
+        @include card;
+      }
+
+      .analytical1_bottomComponent {
+        display: flex;
+
+        > * {
+          width: 100%;
+          @include card;
+        }
+
+        > * + * {
+          margin-left: 24px;
+        }
+      }
+    }
+
+    &_rightComponent {
+      @include card;
+    }
+  }
+
+  .analytical2 {
+    > * {
+      width: 100%;
+      @include card;
+    }
+
+    &_leftComponent {
+      flex-basis: 31.25%;
+    }
+
+    &_rightComponent {
+      flex-basis: 68.75%;
+    }
+  }
+
+  .analytical3 {
+    > * {
+      flex-basis: 33.33%;
+      width: 100%;
+      @include card;
+    }
+  }
 }
