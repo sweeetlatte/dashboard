@@ -1,0 +1,84 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/index.scss';
+
+.modernContainer {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    display: flex;
+    width: 100%;
+
+    > * + * {
+      margin-left: 24px;
+    }
+  }
+
+  > * + * {
+    margin-top: 24px;
+  }
+
+  .modern1,
+  .modern3,
+  .modern4,
+  .modern5 {
+    > * {
+      @include card;
+    }
+  }
+
+  .modern1 {
+    &_leftComponent {
+      flex-basis: 51.5%;
+    }
+
+    &_middleComponent {
+      flex-basis: 20%;
+    }
+
+    &_rightComponent {
+      flex-basis: 28.5%;
+    }
+  }
+
+  .modern2 {
+    &_leftComponent {
+      flex-basis: 66.67%;
+      @include card;
+    }
+
+    &_rightContainer {
+      flex-basis: 33.33%;
+
+      > * {
+        @include card;
+      }
+
+      .modern2_topComponent {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .modern3 {
+    &_leftComponent {
+      flex-basis: 33.33%;
+    }
+
+    &_rightComponent {
+      flex-basis: 66.67%;
+    }
+  }
+
+  .modern4 {
+    > * {
+      flex-basis: 50%;
+    }
+  }
+
+  .modern5 {
+    > * {
+      flex-basis: 33.33%;
+    }
+  }
+}
