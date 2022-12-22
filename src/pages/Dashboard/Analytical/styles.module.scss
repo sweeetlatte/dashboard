@@ -25,16 +25,16 @@
 
     &_leftContainer {
       .analytical1_topComponent {
-        margin-bottom: 24px;
         @include card;
+        margin-bottom: 24px;
       }
 
       .analytical1_bottomComponent {
         display: flex;
 
         > * {
-          width: 100%;
           @include card;
+          width: 100%;
         }
 
         > * + * {
@@ -50,8 +50,8 @@
 
   .analytical2 {
     > * {
-      width: 100%;
       @include card;
+      width: 100%;
     }
 
     &_leftComponent {
@@ -65,9 +65,9 @@
 
   .analytical3 {
     > * {
+      @include card;
       flex-basis: 33.33%;
       width: 100%;
-      @include card;
     }
   }
 }
