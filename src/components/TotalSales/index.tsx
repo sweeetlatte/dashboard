@@ -16,8 +16,9 @@ export default function TotalSales() {
       label: 'Dec 2023',
     },
   ];
+
   return (
-    <div className={styles.totalSalesContainer}>
+    <>
       <div className={styles.title}>
         <div>Total Sales</div>
         <div className={styles.selectBox}>
@@ -34,6 +35,6 @@ export default function TotalSales() {
         <div className={styles.number}>8,364,398</div>
       </div>
       <div>chart</div>
-    </div>
+    </>
   );
 }
