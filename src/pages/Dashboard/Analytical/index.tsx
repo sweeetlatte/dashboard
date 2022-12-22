@@ -1,6 +1,7 @@
 import Earning from '../../../components/Earnings';
 import Hello from '../../../components/Hello';
 import MonthlySales from '../../../components/MonthlySales';
+import ProductPerformance from '../../../components/ProductPerformance';
 import SalesOverview from '../../../components/SalesOverview';
 import TotalSales from '../../../components/TotalSales';
 import styles from './styles.module.scss';
@@ -26,7 +27,9 @@ export default function Analytical() {
         <div className={styles.analytical2_leftComponent}>
           <TotalSales />
         </div>
-        <div className={styles.analytical2_rightComponent}>right</div>
+        <div className={styles.analytical2_rightComponent}>
+          <ProductPerformance />
+        </div>
       </div>
       <div className={styles.analytical3}>
         <div className={styles.analytical3_leftComponent}>left</div>

@@ -1,0 +1,64 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.title {
+  @include title;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+
+  .selectBox {
+    font-size: 16px;
+  }
+}
+
+.table {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  tr {
+    border-bottom: solid 1px $neutral3;
+  }
+
+  tr:last-child {
+    border-bottom: none;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 16px;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  td:nth-child(1) {
+    display: flex;
+
+    > * + * {
+      padding-left: 16px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      > * + * {
+        padding-top: 3px;
+      }
+    }
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+}
