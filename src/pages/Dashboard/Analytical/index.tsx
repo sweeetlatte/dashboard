@@ -13,7 +13,7 @@ export default function Analytical() {
           <div className={styles.analytical1_topComponent}>
             <Hello />
           </div>
-          <div className={styles.analytical1_bottomComponent}>
+          <div className={styles.analytical1_bottomContainer}>
             <Earning />
             <MonthlySales />
           </div>
