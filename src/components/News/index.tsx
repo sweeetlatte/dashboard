@@ -8,7 +8,7 @@ export default function News() {
     id: 0,
     createdAt: 'Dec 24, 2022',
     title: '10 Great Make-Ahead Holiday Appetizers',
-    tags: ['recipe', 'holiday'],
+    tags: ['Recipe', 'Holiday'],
     authors: [
       {
         id: 0,
@@ -39,7 +39,7 @@ export default function News() {
             <Icon.Clock size={14} />
             <div>{data.createdAt}</div>
           </div>
-          <div>{data.title}</div>
+          <div className={styles.title}>{data.title}</div>
           <div className={styles.tags}>
             {data.tags.map((tag, index) => (
               // eslint-disable-next-line react/no-array-index-key

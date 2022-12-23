@@ -59,13 +59,28 @@
     }
   }
 
+  .title {
+    @include title;
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
   .tags {
     border-bottom: solid 1px $neutral3;
     padding-bottom: 24px;
+    margin-top: 16px;
     margin-bottom: 24px;
+    display: flex;
 
     > * {
-      display: inline;
+      background-color: $primary;
+      font-size: 14px;
+      padding: 4px 10px;
+      border-radius: $radius-active-tab;
+    }
+
+    > * + * {
+      margin-left: 9px;
     }
   }
 
