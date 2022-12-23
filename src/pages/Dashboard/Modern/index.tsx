@@ -1,3 +1,9 @@
+import DailyActivities from '../../../components/DailyActivities';
+import News from '../../../components/News';
+import ProductPerformance from '../../../components/ProductPerformance';
+import SalesOverview from '../../../components/SalesOverview';
+import TotalSales from '../../../components/TotalSales';
+import WeeklyStats from '../../../components/WeeklyStats';
 import styles from './styles.module.scss';
 
 export default function Modern() {
@@ -16,16 +22,26 @@ export default function Modern() {
         </div>
       </div>
       <div className={styles.modern3}>
-        <div className={styles.modern3_leftComponent}>left</div>
-        <div className={styles.modern3_rightComponent}>right</div>
+        <div className={styles.modern3_leftComponent}>
+          <TotalSales />
+        </div>
+        <div className={styles.modern3_rightComponent}>
+          <ProductPerformance />
+        </div>
       </div>
       <div className={styles.modern4}>
-        <div>left</div>
-        <div>right</div>
+        <div>
+          <DailyActivities />
+        </div>
+        <SalesOverview />
       </div>
       <div className={styles.modern5}>
-        <div>left</div>
-        <div>middle</div>
+        <div>
+          <News />
+        </div>
+        <div>
+          <WeeklyStats />
+        </div>
         <div>right</div>
       </div>
     </div>

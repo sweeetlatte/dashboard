@@ -1,3 +1,5 @@
+import Earning from '../../../components/Earnings';
+import WeeklyStats from '../../../components/WeeklyStats';
 import styles from './styles.module.scss';
 
 export default function ECommerce() {
@@ -10,7 +12,9 @@ export default function ECommerce() {
       <div className={styles.ecom2}>
         <div className={styles.ecom2_leftComponent}>left</div>
         <div className={styles.ecom2_rightContainer}>
-          <div className={styles.ecom2_topComponent}>top</div>
+          <div className={styles.ecom2_topComponent}>
+            <Earning />
+          </div>
           <div className={styles.ecom2_bottomComponent}>bottom</div>
         </div>
       </div>
@@ -19,7 +23,9 @@ export default function ECommerce() {
         <div className={styles.ecom3_rightComponent}>right</div>
       </div>
       <div className={styles.ecom4}>
-        <div>left</div>
+        <div>
+          <WeeklyStats />
+        </div>
         <div>middle</div>
         <div>right</div>
       </div>
