@@ -66,8 +66,13 @@
   .analytical3 {
     > * {
       @include card;
+      box-sizing: border-box;
       flex-basis: 33.33%;
       width: 100%;
+    }
+
+    &_leftComponent {
+      padding: 0;
     }
   }
 }
