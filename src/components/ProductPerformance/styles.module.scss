@@ -39,10 +39,20 @@
 
   td {
     font-size: 14px;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+
+      img {
+        border-radius: $radius-circle;
+      }
+    }
   }
 
   td:nth-child(1) {
     display: flex;
+    align-items: center;
 
     > * + * {
       padding-left: 16px;
@@ -53,12 +63,49 @@
       flex-direction: column;
 
       > * + * {
-        padding-top: 3px;
+        padding-top: 5px;
       }
+
+      .name {
+        font-weight: 600;
+      }
+
+      .job {
+        color: var(--card-subtext);
+      }
+    }
+  }
+
+  td:nth-child(2) {
+    color: var(--card-subtext);
+    font-weight: 500;
+  }
+
+  td:nth-child(3) {
+    > * {
+      width: fit-content;
+      padding: 5px;
+      font-size: 12px;
+      letter-spacing: 0.25px;
+      color: $neutral5;
+      border-radius: $radius-active-tab;
+    }
+
+    .low {
+      background-color: $green;
+    }
+
+    .medium {
+      background-color: $yellow;
+    }
+
+    .high {
+      background-color: $red;
     }
   }
 
   td:last-child {
     text-align: right;
+    font-weight: 600;
   }
 }
