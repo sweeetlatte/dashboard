@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Select from 'react-select';
 
+import styles from './styles.module.scss';
+
 interface Props {
   data: any;
   placeholder: string;
@@ -48,15 +50,21 @@ export default function CustomSelectBox({
       ...styles,
       display: 'none',
     }),
+    menu: (styles: any) => ({
+      ...styles,
+      zIndex: '1',
+    }),
   };
 
   const CustomSelectBox = () => (
-    <Select
-      styles={colorStyles}
-      placeholder={placeholder}
-      options={data}
-      // menuIsOpen={true}
-    />
+    <div className={styles.container}>
+      <Select
+        styles={colorStyles}
+        placeholder={placeholder}
+        options={data}
+        // menuIsOpen={true}
+      />
+    </div>
   );
 
   return <CustomSelectBox />;

@@ -39,7 +39,13 @@ export default function Avatar() {
           if (showDropdown === false) {
             setShowDropdown(true);
             dispatch(toggleMask());
-          } else setShowDropdown(false);
+            console.log('set true');
+          } else {
+            console.log('start timeout');
+            setTimeout(() => {
+              dispatch(toggleMask());
+            }, 500);
+          }
         }}
       >
         <div className={style.avatar}>
@@ -78,7 +84,7 @@ export default function Avatar() {
                 </div>
               ))}
             </div>
-            <button className='button'>Sign Out</button>
+            <button className={style.button}>Sign Out</button>
           </div>
         </>
       ) : (
