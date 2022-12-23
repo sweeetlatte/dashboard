@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import * as Icon from 'react-feather';
 import Select from 'react-select';
 
 import styles from './styles.module.scss';
@@ -67,5 +69,13 @@ export default function CustomSelectBox({
     </div>
   );
 
-  return <CustomSelectBox />;
+  const TemporaryCustomSelectBox = () => (
+    <div className={styles.temporary}>
+      <div>March 2022</div>
+      <Icon.ChevronDown size={18} />
+    </div>
+  );
+
+  // return <CustomSelectBox />;
+  return <TemporaryCustomSelectBox />;
 }

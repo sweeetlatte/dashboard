@@ -1,8 +1,24 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
 .container {
   z-index: 0 !important;
   position: relative;
 
   .Select-menu-outer {
     z-index: 0 !important;
+  }
+}
+
+.temporary {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  color: $neutral2;
+  border: solid 1px var(--card-text);
+  border-radius: $radius-active-tab;
+
+  > * + * {
+    padding-left: 6px;
   }
 }
