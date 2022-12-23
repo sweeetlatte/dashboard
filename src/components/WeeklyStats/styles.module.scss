@@ -1,0 +1,86 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+@mixin icon {
+  width: 42px;
+  height: 42px;
+  border-radius: $radius-circle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topContainer {
+  padding: 24px;
+
+  .title {
+    @include title;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+
+  .rowContainer {
+    display: flex;
+    flex-direction: column;
+
+    > * + * {
+      margin-top: 24px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .leftContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > * + * {
+          padding-left: 12px;
+        }
+
+        .icon {
+          &1 {
+            @include icon;
+            background-color: $primary;
+          }
+
+          &2 {
+            @include icon;
+            background-color: $secondary;
+          }
+
+          &3 {
+            @include icon;
+            background-color: $yellow;
+          }
+        }
+
+        .info {
+          text-align: left;
+          font-weight: 600;
+
+          .detail {
+            font-size: 14px;
+            color: var(--secondary-text-2);
+            padding-top: 5px;
+            font-weight: normal;
+          }
+        }
+      }
+
+      .percent {
+        height: fit-content;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 3px 7.5px;
+        background-color: $green;
+        border-radius: $radius-active-tab;
+      }
+    }
+  }
+}

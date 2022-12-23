@@ -5,6 +5,7 @@ import News from '../../../components/News';
 import ProductPerformance from '../../../components/ProductPerformance';
 import SalesOverview from '../../../components/SalesOverview';
 import TotalSales from '../../../components/TotalSales';
+import WeeklyStats from '../../../components/WeeklyStats';
 import styles from './styles.module.scss';
 
 export default function Analytical() {
@@ -36,7 +37,9 @@ export default function Analytical() {
         <div className={styles.analytical3_leftComponent}>
           <News />
         </div>
-        <div className={styles.analytical3_middleComponent}>middle</div>
+        <div className={styles.analytical3_middleComponent}>
+          <WeeklyStats />
+        </div>
         <div className={styles.analytical3_rightComponent}>right</div>
       </div>
     </div>
