@@ -1,0 +1,52 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.title {
+  @include title;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+
+  > * + * {
+    margin-top: 12px;
+  }
+
+  .timeline {
+    display: flex;
+    font-size: 14px;
+
+    > * + * {
+      margin-left: 16px;
+    }
+
+    .seperator {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 1.5px;
+
+      > * + * {
+        margin-top: 12px;
+      }
+
+      .circle {
+        width: 9px;
+        height: 9px;
+        border: solid 2px $primary;
+        border-radius: $radius-circle;
+      }
+
+      .line {
+        height: 32px;
+        background-color: var(--secondary-text-2);
+        width: 1.75px;
+      }
+    }
+  }
+}

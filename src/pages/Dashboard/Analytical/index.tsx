@@ -1,3 +1,4 @@
+import DailyActivities from '../../../components/DailyActivities';
 import Earning from '../../../components/Earnings';
 import Hello from '../../../components/Hello';
 import MonthlySales from '../../../components/MonthlySales';
@@ -40,7 +41,9 @@ export default function Analytical() {
         <div className={styles.analytical3_middleComponent}>
           <WeeklyStats />
         </div>
-        <div className={styles.analytical3_rightComponent}>right</div>
+        <div className={styles.analytical3_rightComponent}>
+          <DailyActivities />
+        </div>
       </div>
     </div>
   );
