@@ -55,7 +55,10 @@ export default function News() {
                 </div>
               ))}
             </div>
-            <Icon.MessageCircle />
+            <div className={styles.imgContainer}>
+              <Icon.MessageCircle />
+              <span className={styles.tooltip}>Add a Comment</span>
+            </div>
           </div>
         </div>
       )}
