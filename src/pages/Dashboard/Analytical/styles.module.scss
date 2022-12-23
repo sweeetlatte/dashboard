@@ -75,5 +75,9 @@
     &_middleComponent {
       padding: 0;
     }
+
+    &_leftComponent {
+      height: fit-content;
+    }
   }
 }
