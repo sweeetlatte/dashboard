@@ -18,12 +18,12 @@ export default function DailyActivities() {
       task: 'Meeting with Co.',
     },
     {
-      id: 2,
+      id: 3,
       time: '09.50',
       task: 'Meeting with Co.',
     },
     {
-      id: 2,
+      id: 4,
       time: '09.50',
       task: 'Meeting with Co.',
     },
