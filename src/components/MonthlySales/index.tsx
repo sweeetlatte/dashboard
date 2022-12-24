@@ -38,14 +38,24 @@ const options = {
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+];
 
 const data = {
   labels,
   datasets: [
     {
       label: 'Dataset 1',
-      data: [1, 5, 2, 9, 4, 3, 7],
+      data: [2, 12, 1, 4, 3, 11, 5, 6, 9],
       borderColor: '#cec266',
       backgroundColor: 'white',
     },
