@@ -35,6 +35,10 @@
 
     &_middleComponent {
       flex-basis: 20%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &_rightComponent {

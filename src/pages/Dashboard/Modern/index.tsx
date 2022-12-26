@@ -2,6 +2,7 @@ import Congratulation from '../../../components/Congratulation';
 import DailyActivities from '../../../components/DailyActivities';
 import News from '../../../components/News';
 import ProductPerformance from '../../../components/ProductPerformance';
+import Purchases from '../../../components/Purchases';
 import SalesOverview from '../../../components/SalesOverview';
 import TotalSales from '../../../components/TotalSales';
 import WeeklyStats from '../../../components/WeeklyStats';
@@ -14,7 +15,9 @@ export default function Modern() {
         <div className={styles.modern1_leftComponent}>
           <Congratulation />
         </div>
-        <div className={styles.modern1_middleComponent}>middle</div>
+        <div className={styles.modern1_middleComponent}>
+          <Purchases />
+        </div>
         <div className={styles.modern1_rightComponent}>right</div>
       </div>
       <div className={styles.modern2}>
