@@ -28,6 +28,10 @@
   }
 
   .modern1 {
+    > * {
+      box-sizing: border-box;
+    }
+    
     &_middleComponent,
     &_rightComponent {
       text-align: left;
