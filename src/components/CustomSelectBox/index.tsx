@@ -6,8 +6,8 @@ import Select from 'react-select';
 import styles from './styles.module.scss';
 
 interface Props {
-  data: any;
-  placeholder: string;
+  data?: any;
+  placeholder?: string;
   width: string;
   height?: string;
   borderColor?: string;
@@ -15,9 +15,24 @@ interface Props {
   listBorderColor?: string;
 }
 
+const options = [
+  {
+    value: '2021',
+    label: 'Dec 2021',
+  },
+  {
+    value: '2022',
+    label: 'Dec 2022',
+  },
+  {
+    value: '2023',
+    label: 'Dec 2023',
+  },
+];
+
 export default function CustomSelectBox({
-  data,
-  placeholder,
+  data = options,
+  placeholder = options[0].label,
   width,
   height = '54px',
   borderColor = 'var(--card-text)',

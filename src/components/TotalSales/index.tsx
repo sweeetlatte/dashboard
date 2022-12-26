@@ -35,32 +35,12 @@ const dataChart = {
 };
 
 export default function TotalSales() {
-  const options = [
-    {
-      value: '2021',
-      label: 'Dec 2021',
-    },
-    {
-      value: '2022',
-      label: 'Dec 2022',
-    },
-    {
-      value: '2023',
-      label: 'Dec 2023',
-    },
-  ];
-
   return (
     <>
       <div className={styles.title}>
         <div>Total Sales</div>
         <div className={styles.selectBox}>
-          <CustomSelectBox
-            data={options}
-            placeholder={options[0].label}
-            width='max-content'
-            height='50px'
-          />
+          <CustomSelectBox width='max-content' height='50px' />
         </div>
       </div>
       <div className={styles.detail}>

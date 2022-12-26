@@ -3,21 +3,6 @@ import CustomSelectBox from '../CustomSelectBox';
 import styles from './styles.module.scss';
 
 export default function ProductPerformance() {
-  const data = [
-    {
-      value: '2021',
-      label: 'Dec 2021',
-    },
-    {
-      value: '2022',
-      label: 'Dec 2022',
-    },
-    {
-      value: '2023',
-      label: 'Dec 2023',
-    },
-  ];
-
   const tableData = [
     {
       id: 0,
@@ -62,12 +47,7 @@ export default function ProductPerformance() {
       <div className={styles.title}>
         <div>Product Performance</div>
         <div className={styles.selectBox}>
-          <CustomSelectBox
-            data={data}
-            placeholder={data[0].label}
-            width='max-content'
-            height='50px'
-          />
+          <CustomSelectBox width='max-content' height='50px' />
         </div>
       </div>
       <div className={styles.table}>
