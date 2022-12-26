@@ -113,7 +113,7 @@ export default function WeeklyStats() {
           </div>
         </div>
       </div>
-      <Line options={options} data={data} height={130} />
+      <Line options={options} data={data} height={120} />
     </>
   );
 }
