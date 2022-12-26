@@ -46,6 +46,24 @@ export default function ProductPerformance() {
       priority: 'Low',
       budget: '$24.4k',
     },
+    {
+      id: 3,
+      avatar: avatar,
+      name: 'Latte',
+      job: 'Web Developer',
+      task: 'New Theme',
+      priority: 'Medium',
+      budget: '$24.4k',
+    },
+    {
+      id: 4,
+      avatar: avatar,
+      name: 'Latte',
+      job: 'Web Developer',
+      task: 'New Theme',
+      priority: 'Low',
+      budget: '$24.4k',
+    },
   ];
 
   return (
