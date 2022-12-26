@@ -49,6 +49,13 @@ p {
   line-height: 2;
 }
 
+@mixin sub-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
 /*
   dropdown z-index: 3
 */

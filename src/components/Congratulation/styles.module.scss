@@ -6,7 +6,7 @@
   align-items: center;
 
   .text {
-    font-size: 18px;
+    @include sub-title;
     line-height: 36px;
     text-align: left;
     padding: 24px;
