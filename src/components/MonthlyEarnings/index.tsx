@@ -76,7 +76,7 @@ export default function MonthlyEarnings() {
         <span>
           <Icon.ArrowUpLeft size={14} />
         </span>
-        <span>+9%</span>
+        <span>+9% this week</span>
       </div>
     </>
   );

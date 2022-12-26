@@ -57,12 +57,12 @@ export default function RevenueUpdates() {
   return (
     <>
       <div className={styles.title}>
-        <div>Product Performance</div>
+        <div>Revenue Updates</div>
         <div className={styles.selectBox}>
           <CustomSelectBox />
         </div>
       </div>
-      <Line options={options} data={data} height={75} />
+      <Line options={options} data={data} height={116} />
     </>
   );
 }
