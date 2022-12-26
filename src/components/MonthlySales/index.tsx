@@ -74,9 +74,7 @@ export default function MonthlySales() {
           <Icon.ShoppingBag />
         </div>
       </div>
-      <div>
-        <Line options={options} data={data} />
-      </div>
+      <Line options={options} data={data} height={75} />
     </div>
   );
 }
