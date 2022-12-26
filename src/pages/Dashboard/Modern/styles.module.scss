@@ -31,7 +31,7 @@
     > * {
       box-sizing: border-box;
     }
-    
+
     &_middleComponent,
     &_rightComponent {
       text-align: left;
@@ -69,6 +69,7 @@
 
       .modern2_topComponent {
         margin-bottom: 24px;
+        text-align: left;
       }
     }
   }

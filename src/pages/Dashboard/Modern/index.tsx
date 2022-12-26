@@ -1,5 +1,6 @@
 import Congratulation from '../../../components/Congratulation';
 import DailyActivities from '../../../components/DailyActivities';
+import MonthlyEarnings from '../../../components/MonthlyEarnings';
 import News from '../../../components/News';
 import ProductPerformance from '../../../components/ProductPerformance';
 import Purchases from '../../../components/Purchases';
@@ -29,7 +30,9 @@ export default function Modern() {
           <RevenueUpdates />
         </div>
         <div className={styles.modern2_rightContainer}>
-          <div className={styles.modern2_topComponent}>top</div>
+          <div className={styles.modern2_topComponent}>
+            <MonthlyEarnings />
+          </div>
           <div className={styles.modern2_bottomComponent}>bottom</div>
         </div>
       </div>
