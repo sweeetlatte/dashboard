@@ -61,12 +61,17 @@
   }
 
   .modern3 {
+    > * {
+      padding-bottom: 0;
+    }
+
     &_leftComponent {
       flex-basis: 31.25%;
     }
 
     &_rightComponent {
       flex-basis: 68.75%;
+      padding-bottom: 8px;
     }
   }
 
@@ -79,6 +84,12 @@
   .modern5 {
     > * {
       flex-basis: 33.33%;
+      box-sizing: border-box;
+    }
+
+    &_leftComponent,
+    &_middleComponent {
+      padding: 0;
     }
   }
 }

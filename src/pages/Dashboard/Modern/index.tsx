@@ -33,13 +33,15 @@ export default function Modern() {
         <div>
           <DailyActivities />
         </div>
-        <SalesOverview />
+        <div>
+          <SalesOverview />
+        </div>
       </div>
       <div className={styles.modern5}>
-        <div>
+        <div className={styles.modern5_leftComponent}>
           <News />
         </div>
-        <div>
+        <div className={styles.modern5_middleComponent}>
           <WeeklyStats />
         </div>
         <div>right</div>
