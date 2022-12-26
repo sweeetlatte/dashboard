@@ -3,6 +3,7 @@ import DailyActivities from '../../../components/DailyActivities';
 import News from '../../../components/News';
 import ProductPerformance from '../../../components/ProductPerformance';
 import Purchases from '../../../components/Purchases';
+import RevenueUpdates from '../../../components/RevenueUpdates';
 import SalesOverview from '../../../components/SalesOverview';
 import TotalEarnings from '../../../components/TotalEarnings';
 import TotalSales from '../../../components/TotalSales';
@@ -24,7 +25,9 @@ export default function Modern() {
         </div>
       </div>
       <div className={styles.modern2}>
-        <div className={styles.modern2_leftComponent}>left</div>
+        <div className={styles.modern2_leftComponent}>
+          <RevenueUpdates />
+        </div>
         <div className={styles.modern2_rightContainer}>
           <div className={styles.modern2_topComponent}>top</div>
           <div className={styles.modern2_bottomComponent}>bottom</div>
