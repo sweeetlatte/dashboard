@@ -36,6 +36,11 @@ const options = {
       display: false,
     },
   },
+  elements: {
+    line: {
+      tension: 0.4,
+    },
+  },
 };
 
 const labels = [
@@ -57,7 +62,6 @@ const data = {
       label: 'Dataset 1',
       data: [2, 12, 1, 4, 3, 11, 5, 6, 9],
       borderColor: '#cec266',
-      backgroundColor: 'white',
     },
   ],
 };
