@@ -12,11 +12,12 @@
     padding: 24px;
 
     .number {
-      font-size: 24px;
+      font-size: 30px;
+      font-weight: normal;
+      padding-top: 9px;
 
       span {
         font-size: 14px;
-        font-weight: normal;
       }
     }
 
@@ -29,7 +30,7 @@
 
   .img {
     flex-basis: 36%;
-    height: 177px;
+    height: 188px;
 
     img {
       width: 100%;

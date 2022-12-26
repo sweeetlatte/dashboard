@@ -6,7 +6,7 @@ export default function TotalEarnings() {
   return (
     <>
       <div className={styles.title}>
-        <div>Earnings</div>
+        <div>Total Earnings</div>
         <div className={styles.iconContainer}>
           <Icon.DollarSign />
         </div>
