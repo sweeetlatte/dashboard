@@ -1,4 +1,5 @@
 import Congratulation from '../../../components/Congratulation';
+import Customers from '../../../components/Customers';
 import DailyActivities from '../../../components/DailyActivities';
 import MonthlyEarnings from '../../../components/MonthlyEarnings';
 import News from '../../../components/News';
@@ -33,7 +34,9 @@ export default function Modern() {
           <div className={styles.modern2_topComponent}>
             <MonthlyEarnings />
           </div>
-          <div className={styles.modern2_bottomComponent}>bottom</div>
+          <div className={styles.modern2_bottomComponent}>
+            <Customers />
+          </div>
         </div>
       </div>
       <div className={styles.modern3}>

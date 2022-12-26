@@ -65,11 +65,11 @@
 
       > * {
         @include card;
+        text-align: left;
       }
 
       .modern2_topComponent {
         margin-bottom: 24px;
-        text-align: left;
       }
     }
   }
