@@ -11,9 +11,8 @@
     padding: 24px 24px 0 24px;
 
     .text {
-      font-size: 14px;
+      @include sub-text;
       font-weight: 500;
-      color: var(--card-subtext);
     }
 
     .number {

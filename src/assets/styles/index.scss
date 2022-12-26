@@ -56,6 +56,11 @@ p {
   line-height: 1.5;
 }
 
+@mixin sub-text {
+  font-size: 14px;
+  color: var(--card-subtext);
+}
+
 /*
   dropdown z-index: 3
 */

@@ -24,7 +24,6 @@
   padding-bottom: 9px;
 }
 
-.subtext {
-  font-size: 14px;
-  color: var(--card-subtext);
+.sub-text {
+  @include sub-text;
 }
