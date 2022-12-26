@@ -9,6 +9,8 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
+import styles from './styles.module.scss';
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export const options = {
@@ -18,8 +20,7 @@ export const options = {
       position: 'top' as const,
     },
     title: {
-      display: true,
-      text: 'Chart.js Bar Chart',
+      display: false,
     },
     tooltip: {
       enabled: false,
@@ -27,13 +28,11 @@ export const options = {
   },
   scales: {
     x: {
-      // display: false,
       grid: {
         display: false,
       },
     },
     y: {
-      // display: false,
       grid: {
         display: false,
       },
@@ -47,18 +46,23 @@ const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
-      data: [12, 2, 6, 5, 1, 7],
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      label: 'Latte',
+      data: [9, 3, 8, 12, 7, 11],
+      backgroundColor: '#ba6039',
     },
     {
-      label: 'Dataset 2',
-      data: [10, 12, 7, 4, 9, 6],
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      label: 'Espresso',
+      data: [9, 7, 11, 1, 6, 8],
+      backgroundColor: '#cec266',
     },
   ],
 };
 
 export default function SalesOverview() {
-  return <Bar options={options} data={data} />;
+  return (
+    <>
+      <div className={styles.title}>Sales Overview</div>
+      <Bar options={options} data={data} height={188} />
+    </>
+  );
 }
