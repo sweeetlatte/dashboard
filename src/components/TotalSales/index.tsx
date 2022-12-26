@@ -1,8 +1,40 @@
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
+
 import CustomSelectBox from '../CustomSelectBox';
 import styles from './styles.module.scss';
 
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+const optionsChart = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'bottom' as const,
+    },
+    title: {
+      display: false,
+    },
+    tooltip: {
+      enabled: false,
+    },
+  },
+};
+
+const dataChart = {
+  labels: ['Red', 'Blue', 'Yellow'],
+  datasets: [
+    {
+      label: '# of Votes',
+      data: [12, 19, 3],
+      backgroundColor: ['#cec266', '#ba6039', '#949db2'],
+      borderWidth: 0,
+    },
+  ],
+};
+
 export default function TotalSales() {
-  const data = [
+  const options = [
     {
       value: '2021',
       label: 'Dec 2021',
@@ -23,8 +55,8 @@ export default function TotalSales() {
         <div>Total Sales</div>
         <div className={styles.selectBox}>
           <CustomSelectBox
-            data={data}
-            placeholder={data[0].label}
+            data={options}
+            placeholder={options[0].label}
             width='max-content'
             height='50px'
           />
@@ -34,7 +66,7 @@ export default function TotalSales() {
         <div className={styles.text}>Sales Yearly</div>
         <div className={styles.number}>8,364,398</div>
       </div>
-      <div>chart</div>
+      <Doughnut options={optionsChart} data={dataChart} />
     </>
   );
 }
