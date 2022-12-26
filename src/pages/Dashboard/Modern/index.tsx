@@ -1,3 +1,4 @@
+import Congratulation from '../../../components/Congratulation';
 import DailyActivities from '../../../components/DailyActivities';
 import News from '../../../components/News';
 import ProductPerformance from '../../../components/ProductPerformance';
@@ -10,7 +11,9 @@ export default function Modern() {
   return (
     <div className={styles.modernContainer}>
       <div className={styles.modern1}>
-        <div className={styles.modern1_leftComponent}>left</div>
+        <div className={styles.modern1_leftComponent}>
+          <Congratulation />
+        </div>
         <div className={styles.modern1_middleComponent}>middle</div>
         <div className={styles.modern1_rightComponent}>right</div>
       </div>
