@@ -8,6 +8,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const optionsChart = {
   responsive: true,
+  maintainAspectRatio: true,
   plugins: {
     legend: {
       position: 'bottom' as const,
@@ -66,7 +67,9 @@ export default function TotalSales() {
         <div className={styles.text}>Sales Yearly</div>
         <div className={styles.number}>8,364,398</div>
       </div>
-      <Doughnut options={optionsChart} data={dataChart} />
+      <div className={styles.chartContainer}>
+        <Doughnut options={optionsChart} data={dataChart} />
+      </div>
     </>
   );
 }
