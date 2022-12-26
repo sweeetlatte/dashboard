@@ -52,6 +52,7 @@
 
       .ecom2_topComponent {
         margin-bottom: 24px;
+        background-color: $red;
       }
     }
   }
@@ -59,6 +60,21 @@
   .ecom4 {
     > * {
       flex-basis: 33.33%;
+      box-sizing: border-box;
+    }
+
+    &_leftComponent {
+      padding: 0;
+    }
+
+    &_middleComponent {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      > * + * {
+        margin-top: 18px;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 import Earning from '../../../components/Earnings';
+import MedicalProBranding from '../../../components/MedicalProBranding';
 import WeeklyStats from '../../../components/WeeklyStats';
 import styles from './styles.module.scss';
 
@@ -23,10 +24,12 @@ export default function ECommerce() {
         <div className={styles.ecom3_rightComponent}>right</div>
       </div>
       <div className={styles.ecom4}>
-        <div>
+        <div className={styles.ecom4_leftComponent}>
           <WeeklyStats />
         </div>
-        <div>middle</div>
+        <div className={styles.ecom4_middleComponent}>
+          <MedicalProBranding />
+        </div>
         <div>right</div>
       </div>
     </div>
