@@ -10,7 +10,7 @@ export default function Hello() {
         <button>Download</button>
       </div>
       <div className={styles.img}>
-        <img width='100%' src={reading} alt='' />
+        <img src={reading} alt='' />
       </div>
     </div>
   );

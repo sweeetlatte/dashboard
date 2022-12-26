@@ -8,6 +8,7 @@
   .text {
     @include title;
     text-align: left;
+    padding: 24px;
 
     button {
       @include button;
@@ -18,5 +19,13 @@
 
   .img {
     flex-basis: 36%;
+    height: 266px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-bottom-right-radius: $radius-card;
+    }
   }
 }
