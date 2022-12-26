@@ -1,6 +1,7 @@
 import Congratulation from '../../../components/Congratulation';
 import Customers from '../../../components/Customers';
 import DailyActivities from '../../../components/DailyActivities';
+import MedicalProBranding from '../../../components/MedicalProBranding';
 import MonthlyEarnings from '../../../components/MonthlyEarnings';
 import News from '../../../components/News';
 import ProductPerformance from '../../../components/ProductPerformance';
@@ -62,7 +63,9 @@ export default function Modern() {
         <div className={styles.modern5_middleComponent}>
           <WeeklyStats />
         </div>
-        <div>right</div>
+        <div className={styles.modern5_rightComponent}>
+          <MedicalProBranding />
+        </div>
       </div>
     </div>
   );

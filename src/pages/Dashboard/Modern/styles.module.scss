@@ -105,5 +105,15 @@
     &_middleComponent {
       padding: 0;
     }
+
+    &_rightComponent {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      > * + * {
+        margin-top: 18px;
+      }
+    }
   }
 }
