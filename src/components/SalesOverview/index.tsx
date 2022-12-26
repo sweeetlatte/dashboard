@@ -13,7 +13,7 @@ import styles from './styles.module.scss';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-export const options = {
+const options = {
   responsive: true,
   plugins: {
     legend: {
