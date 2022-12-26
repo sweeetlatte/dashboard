@@ -47,7 +47,7 @@ export default function ProductPerformance() {
       <div className={styles.title}>
         <div>Product Performance</div>
         <div className={styles.selectBox}>
-          <CustomSelectBox width='max-content' height='50px' />
+          <CustomSelectBox />
         </div>
       </div>
       <div className={styles.table}>

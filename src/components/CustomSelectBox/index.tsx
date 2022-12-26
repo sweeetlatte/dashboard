@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 interface Props {
   data?: any;
   placeholder?: string;
-  width: string;
+  width?: string;
   height?: string;
   borderColor?: string;
   controlBackgroundColor?: string;
@@ -33,8 +33,8 @@ const options = [
 export default function CustomSelectBox({
   data = options,
   placeholder = options[0].label,
-  width,
-  height = '54px',
+  width = 'max-content',
+  height = '50px',
   borderColor = 'var(--card-text)',
   controlBackgroundColor = 'var(--card-bg)',
   listBorderColor,
@@ -49,7 +49,7 @@ export default function CustomSelectBox({
       borderColor: borderColor,
       whiteSpace: 'nowrap',
     }),
-    option: (styles: any, { isFocused }: any) => ({
+    option: ({ isFocused }: any) => ({
       color: 'var(--card-text)',
       backgroundColor: isFocused ? '#cec266' : 'var(--card-bg)',
       padding: '8px 12px',

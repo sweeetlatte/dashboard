@@ -40,7 +40,7 @@ export default function TotalSales() {
       <div className={styles.title}>
         <div>Total Sales</div>
         <div className={styles.selectBox}>
-          <CustomSelectBox width='max-content' height='50px' />
+          <CustomSelectBox />
         </div>
       </div>
       <div className={styles.detail}>
