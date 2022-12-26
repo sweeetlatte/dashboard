@@ -38,6 +38,8 @@ export const options = {
       },
     },
   },
+  barPercentage: 0.9,
+  categoryPercentage: 0.3,
 };
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June'];
@@ -47,13 +49,15 @@ const data = {
   datasets: [
     {
       label: 'Latte',
-      data: [9, 3, 8, 12, 7, 11],
+      data: [12, 3, 8, 10, 7, 11],
       backgroundColor: '#ba6039',
+      borderRadius: 4,
     },
     {
       label: 'Espresso',
       data: [9, 7, 11, 1, 6, 8],
       backgroundColor: '#cec266',
+      borderRadius: 4,
     },
   ],
 };
