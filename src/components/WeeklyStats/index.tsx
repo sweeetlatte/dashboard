@@ -1,6 +1,70 @@
+import {
+  CategoryScale,
+  Chart as ChartJS,
+  Legend,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
 import * as Icon from 'react-feather';
 
 import styles from './styles.module.scss';
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      display: false,
+    },
+    title: {
+      display: false,
+    },
+    tooltip: {
+      enabled: false,
+    },
+  },
+  scales: {
+    x: {
+      display: false,
+    },
+    y: {
+      display: false,
+    },
+  },
+  elements: {
+    line: {
+      tension: 0.4,
+    },
+  },
+};
+
+const labels = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+];
+
+const data = {
+  labels,
+  datasets: [
+    {
+      label: 'Dataset 1',
+      data: [2, 12, 1, 4, 3, 11, 5, 6, 9],
+      borderColor: '#cec266',
+    },
+  ],
+};
 
 export default function WeeklyStats() {
   return (
@@ -49,8 +113,7 @@ export default function WeeklyStats() {
           </div>
         </div>
       </div>
-
-      <div>chart</div>
+      <Line options={options} data={data} height={130} />
     </>
   );
 }
