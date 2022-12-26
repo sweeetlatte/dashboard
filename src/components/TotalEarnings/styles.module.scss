@@ -1,0 +1,35 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.title {
+  @include sub-title;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+
+  .iconContainer {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $neutral5;
+    border-radius: $radius-circle;
+    background-color: var(--icon-bg);
+
+    &:hover {
+      background-color: var(--icon-bg-hover);
+    }
+  }
+}
+
+.revenue {
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.text {
+  @include sub-text;
+}

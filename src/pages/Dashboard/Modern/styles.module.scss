@@ -28,6 +28,14 @@
   }
 
   .modern1 {
+    &_middleComponent,
+    &_rightComponent {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
     &_leftComponent {
       flex-basis: 46%;
       padding: 0;
@@ -35,10 +43,6 @@
 
     &_middleComponent {
       flex-basis: 20%;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     &_rightComponent {
