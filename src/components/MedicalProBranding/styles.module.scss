@@ -100,5 +100,6 @@
   button {
     @include button;
     width: fit-content;
+    margin-top: 0;
   }
 }
