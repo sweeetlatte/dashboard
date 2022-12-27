@@ -4,6 +4,7 @@ import MedicalProBranding from '../../../components/MedicalProBranding';
 import ProductPerformanceExpand from '../../../components/ProductPerformanceExpand';
 import Summary from '../../../components/Summary';
 import WeeklyStats from '../../../components/WeeklyStats';
+import YearlySales from '../../../components/YearlySales';
 import styles from './styles.module.scss';
 
 export default function ECommerce() {
@@ -25,7 +26,9 @@ export default function ECommerce() {
           <div className={styles.ecom2_topComponent}>
             <Earning />
           </div>
-          <div className={styles.ecom2_bottomComponent}>bottom</div>
+          <div className={styles.ecom2_bottomComponent}>
+            <YearlySales />
+          </div>
         </div>
       </div>
       <div className={styles.ecom3}>

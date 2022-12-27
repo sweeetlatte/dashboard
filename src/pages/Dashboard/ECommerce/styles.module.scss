@@ -74,9 +74,25 @@
         @include card;
       }
 
-      .ecom2_topComponent {
-        margin-bottom: 24px;
-        background-color: $red;
+      .ecom2 {
+        &_topComponent {
+          margin-bottom: 24px;
+          background-color: $red;
+        }
+
+        &_bottomComponent {
+          display: flex;
+          align-items: center;
+          text-align: left;
+
+          :nth-child(1) {
+            flex-basis: 68%;
+          }
+          
+          :nth-child(2) {
+            flex-basis: 32%;
+          }
+        }
       }
     }
   }
