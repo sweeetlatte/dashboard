@@ -44,11 +44,11 @@ export default function RecentTransactions() {
   return (
     <>
       <div className={styles.title}>Recent Transactions</div>
-      <div>
+      <div className={styles.container}>
         {transactions.map((transaction) => (
           <div key={transaction.id} className={styles.row}>
             <div className={styles.titleContainer}>
-              <div>{transaction.icon}</div>
+              <div className={styles.iconContainer}>{transaction.icon}</div>
               <div>
                 <div className={styles.title}>{transaction.title}</div>
                 <div className={styles.subtitle}>{transaction.subtitle}</div>
@@ -67,7 +67,10 @@ export default function RecentTransactions() {
           </div>
         ))}
       </div>
-      <div>Bottom</div>
+      <div className={styles.bottom}>
+        <button>Add</button>
+        <div>36 Recent Transactions</div>
+      </div>
     </>
   );
 }

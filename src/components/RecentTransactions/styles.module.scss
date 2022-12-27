@@ -1,0 +1,127 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.title {
+  @include title;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+
+  > * + * {
+    margin-top: 16px;
+  }
+
+  :nth-child(1) {
+    .iconContainer {
+      color: $primary;
+      background-color: $primary--glass;
+
+      &:hover {
+        background-color: $primary--glass-hover;
+      }
+    }
+  }
+
+  :nth-child(2) {
+    .iconContainer {
+      color: $red;
+      background-color: $red--glass;
+
+      &:hover {
+        background-color: $red--glass-hover;
+      }
+    }
+  }
+  
+  :nth-child(3) {
+    .iconContainer {
+      color: $green;
+      background-color: $green--glass;
+
+      &:hover {
+        background-color: $green--glass-hover;
+      }
+    }
+  }
+  
+  :nth-child(4) {
+    .iconContainer {
+      color: $yellow;
+      background-color: $yellow--glass;
+
+      &:hover {
+        background-color: $yellow--glass-hover;
+      }
+    }
+  }
+  
+  :nth-child(5) {
+    .iconContainer {
+      color: $blue;
+      background-color: $blue--glass;
+
+      &:hover {
+        background-color: $blue--glass-hover;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .titleContainer {
+      display: flex;
+      align-items: center;
+
+      .iconContainer {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        margin-right: 16px;
+
+        border-radius: $radius-active-tab;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+
+      .subtitle {
+        @include sub-text;
+      }
+    }
+
+    .up {
+      color: $green;
+    }
+
+    .down {
+      color: $red;
+    }
+  }
+}
+
+.bottom {
+  @include sub-text;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $neutral3;
+  margin-top: 27px;
+  padding-top: 24px;
+
+  button {
+    @include button;
+    width: fit-content;
+    margin-top: 0;
+  }
+}
