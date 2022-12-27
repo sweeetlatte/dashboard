@@ -1,37 +1,6 @@
 @import '../../assets/styles/variables.scss';
 @import '../../assets/styles/index.scss';
 
-@mixin tooltip {
-  visibility: hidden;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--dropdown-bg);
-  z-index: 3;
-  opacity: 0;
-  left: 115%;
-  bottom: 125%;
-  width: 72px;
-  height: 22px;
-  margin-left: -61px;
-  border-radius: 6px;
-  font-size: 12px;
-  transition: opacity 0.3s;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: var(--dropdown-bg) transparent transparent transparent;
-  }
-}
-
 .img {
   height: 186px;
 
@@ -107,15 +76,7 @@
     }
 
     .imgContainer {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      position: relative;
-
-      &:hover .tooltip {
-        visibility: visible;
-        opacity: 1;
-      }
+      @include tooltip-container;
 
       img {
         width: 100%;
