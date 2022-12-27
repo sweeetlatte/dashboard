@@ -50,45 +50,43 @@ export default function ProductPerformance() {
           <CustomSelectBox />
         </div>
       </div>
-      <div className={styles.table}>
-        <table>
-          <tr>
-            <th style={{ width: '40%' }}>Assigned</th>
-            <th style={{ width: '30%' }}>Task</th>
-            <th style={{ width: '18%' }}>Priority</th>
-            <th style={{ width: '12%', textAlign: 'right' }}>Budget</th>
-          </tr>
-          {tableData &&
-            tableData.map((row) => (
-              <tr key={row.id}>
-                <td>
-                  <div className={styles.avatar}>
-                    <img src={row.avatar} alt='' width={'100%'} />
-                  </div>
-                  <div className={styles.info}>
-                    <div className={styles.name}>{row.name}</div>
-                    <div className={styles.job}>{row.job}</div>
-                  </div>
-                </td>
-                <td>{row.task}</td>
-                <td>
-                  <div
-                    className={
-                      row.priority === 'Low'
-                        ? styles.low
-                        : row.priority === 'Medium'
-                        ? styles.medium
-                        : styles.high
-                    }
-                  >
-                    {row.priority}
-                  </div>
-                </td>
-                <td>{row.budget}</td>
-              </tr>
-            ))}
-        </table>
-      </div>
+      <table>
+        <tr>
+          <th style={{ width: '40%' }}>Assigned</th>
+          <th style={{ width: '30%' }}>Task</th>
+          <th style={{ width: '18%' }}>Priority</th>
+          <th style={{ width: '12%', textAlign: 'right' }}>Budget</th>
+        </tr>
+        {tableData &&
+          tableData.map((row) => (
+            <tr key={row.id}>
+              <td>
+                <div className={styles.avatar}>
+                  <img src={row.avatar} alt='' width={'100%'} />
+                </div>
+                <div className={styles.info}>
+                  <div className={styles.name}>{row.name}</div>
+                  <div className={styles.job}>{row.job}</div>
+                </div>
+              </td>
+              <td>{row.task}</td>
+              <td>
+                <div
+                  className={
+                    row.priority === 'Low'
+                      ? styles.low
+                      : row.priority === 'Medium'
+                      ? styles.medium
+                      : styles.high
+                  }
+                >
+                  {row.priority}
+                </div>
+              </td>
+              <td>{row.budget}</td>
+            </tr>
+          ))}
+      </table>
     </>
   );
 }
