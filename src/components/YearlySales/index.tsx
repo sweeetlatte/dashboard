@@ -26,7 +26,7 @@ const dataChart = {
   datasets: [
     {
       data: [18, 18, 18, 18],
-      backgroundColor: ['#cec266', '#ba6039', '#eeb736', '#87898e'],
+      backgroundColor: ['#78AED2', '#ba6039', '#eeb736', '#87898e'],
       borderWidth: 0,
     },
   ],

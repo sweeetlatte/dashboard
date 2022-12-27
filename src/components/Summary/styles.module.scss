@@ -15,11 +15,11 @@
 
   &:nth-child(1) {
     .iconContainer {
-      color: $primary;
-      background-color: $primary--glass;
+      color: $blue;
+      background-color: $blue--glass;
 
       &:hover {
-        background-color: $primary--glass-hover;
+        background-color: $blue--glass-hover;
       }
     }
   }
