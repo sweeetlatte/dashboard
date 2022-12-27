@@ -4,7 +4,7 @@ import DailyActivities from '../../../components/DailyActivities';
 import MedicalProBranding from '../../../components/MedicalProBranding';
 import MonthlyEarnings from '../../../components/MonthlyEarnings';
 import News from '../../../components/News';
-import ProductPerformance from '../../../components/ProductPerformance';
+import ProductPerformance from '../../../components/ProductsPerformance';
 import Purchases from '../../../components/Purchases';
 import RevenueUpdates from '../../../components/RevenueUpdates';
 import SalesOverview from '../../../components/SalesOverview';

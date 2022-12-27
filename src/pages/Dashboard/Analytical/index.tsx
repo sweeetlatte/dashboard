@@ -3,7 +3,7 @@ import Earning from '../../../components/Earnings';
 import Hello from '../../../components/Hello';
 import MonthlySales from '../../../components/MonthlySales';
 import News from '../../../components/News';
-import ProductPerformance from '../../../components/ProductPerformance';
+import ProductPerformance from '../../../components/ProductsPerformance';
 import SalesOverview from '../../../components/SalesOverview';
 import TotalSales from '../../../components/TotalSales';
 import WeeklyStats from '../../../components/WeeklyStats';
