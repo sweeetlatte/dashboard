@@ -62,8 +62,9 @@
 
   .ecom2 {
     &_leftComponent {
-      flex-basis: 65.5%;
       @include card;
+      flex-basis: 65.5%;
+      text-align: left;
     }
 
     &_rightContainer {
