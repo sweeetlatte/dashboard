@@ -17,6 +17,10 @@
     .iconContainer {
       color: $primary;
       background-color: $primary--glass;
+
+      &:hover {
+        background-color: $primary--glass-hover;
+      }
     }
   }
 
@@ -24,6 +28,10 @@
     .iconContainer {
       color: $yellow;
       background-color: $yellow--glass;
+
+      &:hover {
+        background-color: $yellow--glass-hover;
+      }
     }
   }
 
@@ -31,6 +39,10 @@
     .iconContainer {
       color: $red;
       background-color: $red--glass;
+
+      &:hover {
+        background-color: $red--glass-hover;
+      }
     }
   }
 
@@ -38,6 +50,10 @@
     .iconContainer {
       color: $green;
       background-color: $green--glass;
+
+      &:hover {
+        background-color: $green--glass-hover;
+      }
     }
   }
 
@@ -62,7 +78,7 @@
     }
   }
 
-	.text {
-		@include sub-text;
-	}
+  .text {
+    @include sub-text;
+  }
 }
