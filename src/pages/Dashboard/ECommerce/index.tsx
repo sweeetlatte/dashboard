@@ -2,6 +2,7 @@ import Earning from '../../../components/Earnings';
 import EarningsWhiteBg from '../../../components/EarningsWhiteBg';
 import MedicalProBranding from '../../../components/MedicalProBranding';
 import ProductPerformanceExpand from '../../../components/ProductsPerformanceExpand';
+import ProductsPerformanceTable from '../../../components/ProductsPerformanceTable';
 import RecentTransactions from '../../../components/RecentTransactions';
 import Summary from '../../../components/Summary';
 import WeeklyStats from '../../../components/WeeklyStats';
@@ -36,7 +37,9 @@ export default function ECommerce() {
         <div className={styles.ecom3_leftComponent}>
           <RecentTransactions />
         </div>
-        <div className={styles.ecom3_rightComponent}>right</div>
+        <div className={styles.ecom3_rightComponent}>
+          <ProductsPerformanceTable />
+        </div>
       </div>
       <div className={styles.ecom4}>
         <div className={styles.ecom4_leftComponent}>

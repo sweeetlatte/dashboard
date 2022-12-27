@@ -30,11 +30,11 @@
   .ecom3 {
     > * {
       box-sizing: border-box;
+      text-align: left;
     }
 
     &_leftComponent {
       flex-basis: 32.5%;
-      text-align: left;
     }
 
     &_rightComponent {
