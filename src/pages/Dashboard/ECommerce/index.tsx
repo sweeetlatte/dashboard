@@ -1,6 +1,7 @@
 import Earning from '../../../components/Earnings';
 import EarningsWhiteBg from '../../../components/EarningsWhiteBg';
 import MedicalProBranding from '../../../components/MedicalProBranding';
+import Summary from '../../../components/Summary';
 import WeeklyStats from '../../../components/WeeklyStats';
 import styles from './styles.module.scss';
 
@@ -11,7 +12,9 @@ export default function ECommerce() {
         <div className={styles.ecom1_leftComponent}>
           <EarningsWhiteBg />
         </div>
-        <div className={styles.ecom1_rightComponent}>right</div>
+        <div className={styles.ecom1_rightComponent}>
+          <Summary />
+        </div>
       </div>
       <div className={styles.ecom2}>
         <div className={styles.ecom2_leftComponent}>left</div>

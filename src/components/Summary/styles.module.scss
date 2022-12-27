@@ -1,0 +1,68 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.summaryItem {
+  .iconContainer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 52px;
+    height: 52px;
+    border-radius: $radius-circle;
+  }
+
+  &:nth-child(1) {
+    .iconContainer {
+      color: $primary;
+      background-color: $primary--glass;
+    }
+  }
+
+  &:nth-child(2) {
+    .iconContainer {
+      color: $yellow;
+      background-color: $yellow--glass;
+    }
+  }
+
+  &:nth-child(3) {
+    .iconContainer {
+      color: $red;
+      background-color: $red--glass;
+    }
+  }
+
+  &:nth-child(4) {
+    .iconContainer {
+      color: $green;
+      background-color: $green--glass;
+    }
+  }
+
+  .numbers {
+    @include title;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+
+    span {
+      font-weight: normal;
+      font-size: 12px;
+      padding-left: 9px;
+    }
+
+    .up {
+      color: $green;
+    }
+
+    .down {
+      color: $red;
+    }
+  }
+
+	.text {
+		@include sub-text;
+	}
+}
