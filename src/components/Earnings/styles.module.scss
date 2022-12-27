@@ -4,12 +4,15 @@
 .earningContainer {
   text-align: left;
   background-color: $red !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
   .title {
     @include title;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 9px;
 
     .iconContainer {
       width: 48px;

@@ -11,8 +11,10 @@ export default function Earning() {
           <Icon.DollarSign />
         </div>
       </div>
-      <div className={styles.revenue}>$69,154,309</div>
-      <div className={styles.text}>Monthly Revenue</div>
+      <div>
+        <div className={styles.revenue}>$69,154,309</div>
+        <div className={styles.text}>Monthly Revenue</div>
+      </div>
     </div>
   );
 }
