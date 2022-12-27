@@ -152,7 +152,7 @@ export default function ProductPerformanceExpand() {
           </div>
         </div>
         <div className={styles.rightContainer}>
-          <Bar options={optionsBarChart} data={dataBarChart} height={160} />
+          <Bar options={optionsBarChart} data={dataBarChart} height={185} />
         </div>
       </div>
     </>
