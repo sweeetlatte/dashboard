@@ -17,8 +17,7 @@ const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: 'top' as const,
-      align: 'end' as const,
+      display: false,
     },
     title: {
       display: false,
@@ -66,8 +65,20 @@ const data = {
 export default function SalesOverview() {
   return (
     <>
-      <div className={styles.title}>Sales Overview</div>
-      <Bar options={options} data={data} height={188} />
+      <div className={styles.title}>
+        <div>Sales Overview</div>
+        <div className={styles.legendsContainer}>
+          <div className={styles.legend}>
+            <span></span>
+            Latte
+          </div>
+          <div className={styles.legend}>
+            <span></span>
+            Espresso
+          </div>
+        </div>
+      </div>
+      <Bar options={options} data={data} height={170} />
     </>
   );
 }

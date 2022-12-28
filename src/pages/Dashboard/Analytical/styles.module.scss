@@ -53,6 +53,8 @@
 
     &_rightComponent {
       @include card;
+      @include flex-column;
+      justify-content: space-between;
     }
   }
 
