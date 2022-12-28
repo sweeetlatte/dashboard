@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import avatar from '../../../assets/images/avatar.jpg';
+import { ProductsData } from './types';
 
-const initialState = {
+const initialState: ProductsData = {
   products: [
     {
       id: 0,
