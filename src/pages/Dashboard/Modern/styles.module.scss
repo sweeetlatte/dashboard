@@ -2,8 +2,7 @@
 @import '../../../assets/styles/index.scss';
 
 .modernContainer {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 
   > * {
     display: flex;
@@ -34,9 +33,8 @@
 
     &_middleComponent,
     &_rightComponent {
+      @include flex-column;
       text-align: left;
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
     }
 
@@ -61,17 +59,15 @@
     }
 
     &_rightContainer {
+      @include flex-column;
       flex-basis: 34.5%;
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
 
       > * {
         @include card;
+        @include flex-column;
         flex-basis: 50%;
         text-align: left;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
       }
 
@@ -114,9 +110,8 @@
     }
 
     &_rightComponent {
+      @include flex-column;
       text-align: left;
-      display: flex;
-      flex-direction: column;
 
       > * + * {
         margin-top: 18px;

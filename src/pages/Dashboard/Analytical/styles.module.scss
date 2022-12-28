@@ -1,8 +1,7 @@
 @import '../../../assets/styles/index.scss';
 
 .analyticalContainer {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 
   > * {
     display: flex;
@@ -23,8 +22,7 @@
     }
 
     &_leftContainer {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
 
       > * + * {
         margin-top: 24px;

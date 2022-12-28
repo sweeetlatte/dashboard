@@ -11,10 +11,9 @@
   }
 
   .labelGroup {
-    padding-top: 24px;
     @include sub-text;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+    padding-top: 24px;
     width: fit-content;
 
     > * + * {

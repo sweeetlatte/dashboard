@@ -114,6 +114,11 @@ h6 {
   padding-top: 1px;
 }
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 /*
 z-index:
 - header: 5

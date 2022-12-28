@@ -22,8 +22,7 @@
   }
 
   .rowContainer {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
 
     > * + * {
       margin-top: 24px;

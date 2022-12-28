@@ -9,8 +9,7 @@
   padding-bottom: 24px;
 }
 .timelineContainer {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   padding-left: 12px;
 
   > * + * {
@@ -26,9 +25,8 @@
     }
 
     .seperator {
-      display: flex;
+      @include flex-column;
       align-items: center;
-      flex-direction: column;
       padding-top: 1.5px;
 
       > * + * {

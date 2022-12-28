@@ -1,4 +1,5 @@
 @import '../assets/styles/variables.scss';
+@import '../assets/styles/index.scss';
 
 .layout {
   &__main {
@@ -19,10 +20,9 @@
   }
 
   &__custom-scrollbar {
+    @include flex-column;
     padding-right: 16px;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
     height: calc(100vh - 140px - 48px);
 
     > * + * {

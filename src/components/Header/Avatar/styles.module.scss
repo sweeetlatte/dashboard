@@ -77,9 +77,8 @@
         }
       }
       .textGroup {
+        @include flex-column;
         text-align: left;
-        display: flex;
-        flex-direction: column;
         line-height: 1.235;
         font-size: 14px;
 

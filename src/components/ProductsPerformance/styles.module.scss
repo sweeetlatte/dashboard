@@ -58,8 +58,7 @@ td:nth-child(1) {
   }
 
   .info {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
 
     > * + * {
       padding-top: 5px;
