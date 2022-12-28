@@ -3,9 +3,7 @@
 
 .title {
   @include title;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-center-sb;
 }
 
 .tag {
@@ -93,9 +91,7 @@
 
 .bottom {
   @include sub-text;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-center-sb;
 
   button {
     @include button;

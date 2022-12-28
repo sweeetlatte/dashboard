@@ -3,9 +3,7 @@
 
 .title {
   @include title;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-center-sb;
   padding-bottom: 18px;
 }
 

@@ -15,9 +15,7 @@
 
   .title {
     @include title;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-center-sb;
     padding-bottom: 24px;
   }
 
@@ -29,9 +27,7 @@
     }
 
     .row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex-center-sb;
 
       .leftContainer {
         display: flex;

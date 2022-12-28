@@ -119,6 +119,12 @@ h6 {
   flex-direction: column;
 }
 
+@mixin flex-center-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*
 z-index:
 - header: 5

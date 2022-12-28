@@ -1,12 +1,10 @@
 @import '../../assets/styles/variables.scss';
 
 .headerWrap {
+  @include flex-center-sb;
   z-index: 5;
   position: fixed;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 0px 30px;
   color: $header-text;
@@ -18,10 +16,8 @@
   }
 
   .left {
+    @include flex-center-sb;
     flex-basis: 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     .logo {
       width: 40px;

@@ -1,9 +1,7 @@
 @import '../../assets/styles/index.scss';
 
 .congratsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-center-sb;
 
   .text {
     @include sub-title;
