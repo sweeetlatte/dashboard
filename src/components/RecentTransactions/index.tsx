@@ -61,6 +61,7 @@ export default function RecentTransactions() {
                 {Intl.NumberFormat('en-US', {
                   style: 'currency',
                   currency: 'USD',
+                  maximumFractionDigits: 0,
                 }).format(transaction.change)}
               </div>
             )}
