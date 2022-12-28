@@ -81,7 +81,9 @@ export default function MonthlySales() {
           <Icon.ShoppingBag />
         </div>
       </div>
-      <Line options={options} data={data} height={75} />
+      <div className={styles.chartContainer}>
+        <Line options={options} data={data} height={116} />
+      </div>
     </div>
   );
 }

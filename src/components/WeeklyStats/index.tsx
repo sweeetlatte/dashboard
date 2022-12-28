@@ -116,7 +116,9 @@ export default function WeeklyStats() {
           </div>
         </div>
       </div>
-      <Line options={options} data={data} height={120} />
+      <div className={styles.chartContainer}>
+        <Line options={options} data={data} height={103} />
+      </div>
     </>
   );
 }

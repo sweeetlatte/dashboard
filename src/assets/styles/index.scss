@@ -110,6 +110,10 @@ h6 {
   }
 }
 
+@mixin line-chart-container {
+  padding-top: 1px;
+}
+
 /*
   dropdown z-index: 3
 */

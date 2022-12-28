@@ -32,10 +32,13 @@
 
       .analytical1_topComponent {
         @include card;
+        flex-basis: 52%;
+        flex-basis: 52%;
         padding: 0;
       }
-
+      
       .analytical1_bottomContainer {
+        flex-basis: 48%;
         display: flex;
 
         > * {
