@@ -34,7 +34,6 @@
     &_middleComponent,
     &_rightComponent {
       @include flex-column;
-      text-align: left;
       justify-content: space-between;
     }
 
@@ -67,7 +66,6 @@
         @include card;
         @include flex-column;
         flex-basis: 50%;
-        text-align: left;
         justify-content: space-between;
       }
 
@@ -111,7 +109,6 @@
 
     &_rightComponent {
       @include flex-column;
-      text-align: left;
 
       > * + * {
         margin-top: 18px;

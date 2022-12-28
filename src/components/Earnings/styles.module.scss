@@ -3,7 +3,6 @@
 
 .earningContainer {
   @include flex-column;
-  text-align: left;
   background-color: $red !important;
   justify-content: space-between;
   height: 100%;

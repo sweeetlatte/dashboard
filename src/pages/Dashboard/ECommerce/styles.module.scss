@@ -29,7 +29,6 @@
   .ecom3 {
     > * {
       box-sizing: border-box;
-      text-align: left;
     }
 
     &_leftComponent {
@@ -44,7 +43,6 @@
   .ecom1 {
     &_rightComponent {
       display: flex;
-      text-align: left;
       padding: 0;
 
       > * {
@@ -63,7 +61,6 @@
     &_leftComponent {
       @include card;
       flex-basis: 65.5%;
-      text-align: left;
     }
 
     &_rightContainer {
@@ -89,7 +86,6 @@
         &_bottomComponent {
           display: flex;
           align-items: center;
-          text-align: left;
 
           :nth-child(1) {
             flex-basis: 68%;
@@ -107,7 +103,6 @@
     > * {
       flex-basis: 33.33%;
       box-sizing: border-box;
-      text-align: left;
     }
 
     &_leftComponent {

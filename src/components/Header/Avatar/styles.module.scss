@@ -51,7 +51,6 @@
 
     .title {
       font-size: 18px;
-      text-align: left;
       font-weight: bold;
     }
 
@@ -76,9 +75,9 @@
           border-radius: 9999px;
         }
       }
+
       .textGroup {
         @include flex-column;
-        text-align: left;
         line-height: 1.235;
         font-size: 14px;
 
@@ -128,7 +127,6 @@
         }
 
         .text {
-          text-align: left;
           font-weight: bold;
 
           .subtext {
