@@ -3,13 +3,11 @@
 
 .title {
   @include sub-title;
-  padding-bottom: 14px;
 }
 
 .number {
   font-size: 20px;
   font-weight: normal;
-  padding-top: 24px;
 
   span {
     font-size: 14px;
