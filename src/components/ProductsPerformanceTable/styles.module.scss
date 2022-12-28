@@ -29,6 +29,11 @@ table {
     td {
       padding: 18px 0;
 
+      &:nth-child(2) .sold,
+      &:nth-child(3) .subtext {
+        @include sub-text;
+      }
+
       &:nth-child(1) {
         display: flex;
         align-items: center;
@@ -61,49 +66,58 @@ table {
           }
         }
       }
-    }
 
-    &:nth-child(2) {
-      .fullBar {
-        position: relative;
-        display: inline-block;
-        height: 3px;
-        width: 100px;
-        margin-top: 12px;
-        margin-bottom: 6px;
-        border-radius: $radius-active-tab;
-        background-color: var(--icon-bg);
-
-        > * {
-          position: static;
-          margin-bottom: 10px;
+      &:nth-child(2) {
+        .fullBar {
+          position: relative;
           display: inline-block;
           height: 3px;
-          width: 90px;
+          width: 100px;
+          margin-top: 12px;
+          margin-bottom: 6px;
           border-radius: $radius-active-tab;
-        }
+          background-color: var(--icon-bg);
 
-        .progressBar {
-          &_excellent {
-            background-color: $primary;
+          > * {
+            position: static;
+            margin-bottom: 10px;
+            display: inline-block;
+            height: 3px;
+            width: 90px;
+            border-radius: $radius-active-tab;
           }
 
-          &_good {
-            background-color: $blue;
-          }
+          .progressBar {
+            &_excellent {
+              background-color: $primary;
+            }
 
-          &_average {
-            background-color: $yellow;
-          }
+            &_good {
+              background-color: $blue;
+            }
 
-          &_poor {
-            background-color: $red;
+            &_average {
+              background-color: $yellow;
+            }
+
+            &_poor {
+              background-color: $red;
+            }
           }
         }
       }
 
-      .sold {
-        @include sub-text;
+      &:nth-child(3) {
+        .number {
+          @include sub-title;
+          padding-top: 5px;
+        }
+      }
+
+      &:nth-child(4) {
+        > * {
+          cursor: pointer;
+        }
       }
     }
   }

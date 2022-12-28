@@ -90,7 +90,16 @@ export default function ProductsPerformanceTable() {
                   </span>
                   <p className={styles.sold}>{row.sold}% sold</p>
                 </td>
-                <td>earning</td>
+                <td>
+                  <p className={styles.subtext}>Earnings</p>
+                  <p className={styles.number}>
+                    {Intl.NumberFormat('en-US', {
+                      style: 'currency',
+                      currency: 'USD',
+                      maximumFractionDigits: 0,
+                    }).format(row.earned)}
+                  </p>
+                </td>
                 <td>
                   <Icon.Trash size={16} />
                 </td>
