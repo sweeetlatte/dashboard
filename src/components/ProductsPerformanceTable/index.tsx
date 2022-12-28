@@ -70,8 +70,12 @@ export default function ProductsPerformanceTable() {
                   </p>
                 </td>
                 <td>
-                  <div onClick={() => dispatch(removeProduct(row.id))}>
+                  <div
+                    className={styles.tooltipContainer}
+                    onClick={() => dispatch(removeProduct(row.id))}
+                  >
                     <Icon.Trash size={16} />
+                    <span className={styles.tooltip}>Delete</span>
                   </div>
                 </td>
               </tr>

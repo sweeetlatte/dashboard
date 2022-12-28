@@ -118,6 +118,17 @@ table {
         > * {
           cursor: pointer;
         }
+
+        .tooltipContainer {
+          @include tooltip-container;
+
+          .tooltip {
+            @include tooltip;
+            left: 0;
+            bottom: 141%;
+            margin-left: -28px;
+          }
+        }
       }
     }
   }
