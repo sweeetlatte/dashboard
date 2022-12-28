@@ -18,7 +18,7 @@ $yellow: #eeb736;
 $yellow--glass: #fcf5e4;
 $yellow--glass-hover: #f8ebcb;
 
-$blue: #78AED2;
+$blue: #78aed2;
 $blue--glass: #e3f3fd;
 $blue--glass-hover: #d4e9f7;
 
@@ -43,10 +43,12 @@ $radius-active-tab: 5px;
   --card-bg: #ffffff;
   --card-text: #000;
   --dropdown-bg: #ffffff;
+  --dropdown-hover: #f3f3f3;
   --icon-bg: #f6f6f6;
   --icon-bg-hover: #ebebeb;
   --shadow-card: rgba(116, 116, 116, 0.08) 5px 5px 9px;
   --shadow: rgba(116, 116, 116, 0.08) 1px 2px 10px;
+  --btn-more-hover: rgba(0, 0, 0, 0.05);
 }
 
 [data-theme='dark-theme'] {
@@ -58,8 +60,10 @@ $radius-active-tab: 5px;
   --card-text: #e6e5e8;
   --card-subtext: #e0e0e0;
   --dropdown-bg: #4a4e48;
+  --dropdown-hover: #3f423e;
   --icon-bg: #ffffff;
   --icon-bg-hover: #f1f0f0;
   --shadow-card: rgba(180, 180, 180, 0.08) 5px 5px 9px;
   --shadow: rgba(150, 150, 150, 0.18) 0px 3px 27px;
+  --btn-more-hover: rgba(254, 254, 254, 0.1);
 }

@@ -1,4 +1,5 @@
 import avatar from '../../assets/images/avatar.jpg';
+// import ButtonMore from '../ButtonMore';
 import styles from './styles.module.scss';
 
 export default function MedicalProBranding() {
@@ -36,7 +37,7 @@ export default function MedicalProBranding() {
     <>
       <div className={styles.title}>
         <div>MedicalPro Branding</div>
-        <div>...</div>
+        {/* <ButtonMore /> */}
       </div>
       <div className={styles.tag}>24 DEC, 2022</div>
       <div className={styles.detailsContainer}>

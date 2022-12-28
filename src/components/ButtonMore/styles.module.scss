@@ -1,0 +1,62 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/index.scss';
+
+.container {
+  position: relative;
+
+  .dotsContainer {
+    @include tooltip-container;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: $radius-circle;
+
+    &:hover {
+      background-color: var(--btn-more-hover);
+    }
+
+    .dots {
+      display: flex;
+      align-items: center;
+
+      > * {
+        width: 4px;
+        height: 4px;
+        border-radius: $radius-circle;
+        background-color: var(--secondary-text-1);
+      }
+
+      > * + * {
+        margin-left: 5px;
+      }
+    }
+
+    .tooltip {
+      @include tooltip;
+      left: 101%;
+    }
+  }
+
+  .dropdownContainer {
+    @include card;
+    position: absolute;
+    width: max-content;
+    height: fit-content;
+    top: 50px;
+    right: 0;
+    font-size: 14px;
+    padding: 0;
+    background-color: var(--dropdown-bg);
+    border-radius: $radius-active-tab;
+    text-align: left;
+
+    > * {
+      padding: 9px 22.5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--dropdown-hover);
+      }
+    }
+  }
+}

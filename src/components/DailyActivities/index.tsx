@@ -1,6 +1,9 @@
+import ButtonMore from '../ButtonMore';
 import styles from './styles.module.scss';
 
 export default function DailyActivities() {
+  const componentId = 1;
+
   const data = [
     {
       id: 0,
@@ -28,11 +31,12 @@ export default function DailyActivities() {
       task: 'Meeting with Co.',
     },
   ];
+
   return (
     <>
       <div className={styles.title}>
         <div>Daily Activities</div>
-        <div>...</div>
+        <ButtonMore componentId={componentId} />
       </div>
       <div className={styles.timelineContainer}>
         {data &&

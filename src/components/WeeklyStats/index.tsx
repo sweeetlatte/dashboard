@@ -11,6 +11,7 @@ import {
 import { Line } from 'react-chartjs-2';
 import * as Icon from 'react-feather';
 
+import ButtonMore from '../ButtonMore';
 import styles from './styles.module.scss';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
@@ -70,12 +71,14 @@ const data = {
 };
 
 export default function WeeklyStats() {
+  const componentId = 2;
+
   return (
     <>
       <div className={styles.topContainer}>
         <div className={styles.title}>
           <div>Weekly Stats</div>
-          <div>...</div>
+          <ButtonMore componentId={componentId} />
         </div>
         <div className={styles.rowContainer}>
           <div className={styles.row}>
