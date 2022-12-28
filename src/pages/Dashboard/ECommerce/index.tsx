@@ -1,3 +1,4 @@
+import DailyNews from '../../../components/DailyNews';
 import Earning from '../../../components/Earnings';
 import EarningsWhiteBg from '../../../components/EarningsWhiteBg';
 import MedicalProBranding from '../../../components/MedicalProBranding';
@@ -48,7 +49,9 @@ export default function ECommerce() {
         <div className={styles.ecom4_middleComponent}>
           <MedicalProBranding />
         </div>
-        <div>right</div>
+        <div>
+          <DailyNews />
+        </div>
       </div>
     </div>
   );

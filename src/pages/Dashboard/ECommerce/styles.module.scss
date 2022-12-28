@@ -109,6 +109,7 @@
     > * {
       flex-basis: 33.33%;
       box-sizing: border-box;
+      text-align: left;
     }
 
     &_leftComponent {
@@ -116,7 +117,6 @@
     }
 
     &_middleComponent {
-      text-align: left;
       display: flex;
       flex-direction: column;
 
