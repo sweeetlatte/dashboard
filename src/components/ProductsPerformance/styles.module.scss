@@ -14,92 +14,100 @@
 table {
   border-collapse: collapse;
   width: 100%;
-}
 
-tr {
-  border-bottom: solid 1px $neutral3;
-}
-
-tr:last-child {
-  border-bottom: none;
-}
-
-th,
-td {
-  text-align: left;
-  padding: 20px 16px;
-}
-
-th {
-  font-weight: 600;
-}
-
-td {
-  font-size: 14px;
-
-  .avatar {
-    width: 48px;
-    height: 48px;
-
-    img {
-      border-radius: $radius-circle;
-    }
-  }
-}
-
-td:nth-child(1) {
-  display: flex;
-  align-items: center;
-
-  > * + * {
-    padding-left: 16px;
+  th,
+  td {
+    text-align: left;
+    padding: 20px 16px;
   }
 
-  .info {
-    @include flex-column;
+  tr {
+    border-bottom: solid 1px $neutral3;
+  }
 
-    > * + * {
-      padding-top: 5px;
-    }
-
-    .name {
+  thead {
+    th {
       font-weight: 600;
     }
+  }
 
-    .job {
-      color: var(--card-subtext);
+  tbody {
+    tr:last-child {
+      border-bottom: none;
+
+      td {
+        padding-bottom: 0;
+      }
+    }
+
+    td {
+      font-size: 14px;
+
+      .avatar {
+        width: 48px;
+        height: 48px;
+
+        img {
+          border-radius: $radius-circle;
+        }
+      }
+
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+
+        > * + * {
+          padding-left: 16px;
+        }
+
+        .info {
+          @include flex-column;
+
+          > * + * {
+            padding-top: 5px;
+          }
+
+          .name {
+            font-weight: 600;
+          }
+
+          .job {
+            color: var(--card-subtext);
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        color: var(--card-subtext);
+        font-weight: 500;
+      }
+
+      &:nth-child(3) {
+        > * {
+          width: fit-content;
+          padding: 5px;
+          font-size: 12px;
+          letter-spacing: 0.25px;
+          border-radius: $radius-active-tab;
+        }
+
+        .low {
+          background-color: $green;
+        }
+
+        .medium {
+          background-color: $yellow;
+        }
+
+        .high {
+          background-color: $red;
+        }
+      }
+
+      &:last-child {
+        text-align: right;
+        font-weight: 600;
+      }
     }
   }
-}
-
-td:nth-child(2) {
-  color: var(--card-subtext);
-  font-weight: 500;
-}
-
-td:nth-child(3) {
-  > * {
-    width: fit-content;
-    padding: 5px;
-    font-size: 12px;
-    letter-spacing: 0.25px;
-    border-radius: $radius-active-tab;
-  }
-
-  .low {
-    background-color: $green;
-  }
-
-  .medium {
-    background-color: $yellow;
-  }
-
-  .high {
-    background-color: $red;
-  }
-}
-
-td:last-child {
-  text-align: right;
-  font-weight: 600;
 }
