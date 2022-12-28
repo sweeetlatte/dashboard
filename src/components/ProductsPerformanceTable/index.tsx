@@ -1,43 +1,12 @@
 import * as Icon from 'react-feather';
 
-import avatar from '../../assets/images/avatar.jpg';
+import { removeProduct } from '../../redux/actions';
+import { useAppDispatch, useAppSelector } from '../../redux/store';
 import styles from './styles.module.scss';
 
 export default function ProductsPerformanceTable() {
-  const tableData = [
-    {
-      id: 0,
-      img: avatar,
-      name: 'Butterscotch Ice-cream',
-      ingres: ['Ice-Cream', 'Milk', 'Powder'],
-      sold: 98,
-      earned: 780000,
-    },
-    {
-      id: 1,
-      img: avatar,
-      name: 'Fresh Tomato',
-      ingres: ['Tomato'],
-      sold: 81,
-      earned: 546000,
-    },
-    {
-      id: 2,
-      img: avatar,
-      name: 'Candy',
-      ingres: ['Chocolate', 'Sugar'],
-      sold: 54,
-      earned: 457000,
-    },
-    {
-      id: 3,
-      img: avatar,
-      name: 'Ice-cream Sandwich',
-      ingres: ['Ice-Cream', 'Bread'],
-      sold: 24,
-      earned: 125000,
-    },
-  ];
+  const dispatch = useAppDispatch();
+  const tableData = useAppSelector((state) => state.product.products);
 
   return (
     <>
@@ -101,7 +70,9 @@ export default function ProductsPerformanceTable() {
                   </p>
                 </td>
                 <td>
-                  <Icon.Trash size={16} />
+                  <div onClick={() => dispatch(removeProduct(row.id))}>
+                    <Icon.Trash size={16} />
+                  </div>
                 </td>
               </tr>
             ))}

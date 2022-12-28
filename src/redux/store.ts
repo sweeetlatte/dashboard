@@ -9,7 +9,7 @@ import reducer from './reducers';
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['theme', 'mask'],
+  blacklist: ['theme', 'mask', 'product'],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer);
