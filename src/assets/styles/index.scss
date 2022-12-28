@@ -125,6 +125,16 @@ h6 {
   justify-content: space-between;
 }
 
+@mixin icon-circle-48 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: $radius-circle;
+}
+
 /*
 z-index:
 - header: 5

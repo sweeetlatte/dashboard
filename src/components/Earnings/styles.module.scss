@@ -13,14 +13,8 @@
     justify-content: space-between;
 
     .iconContainer {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+      @include icon-circle-48;
       color: $neutral5;
-      border-radius: $radius-circle;
       background-color: var(--icon-bg);
 
       &:hover {
