@@ -11,7 +11,7 @@ const optionsChart = {
   maintainAspectRatio: true,
   plugins: {
     legend: {
-      position: 'bottom' as const,
+      display: false,
     },
     title: {
       display: false,
@@ -49,6 +49,17 @@ export default function TotalSales() {
       </div>
       <div className={styles.chartContainer}>
         <Doughnut options={optionsChart} data={dataChart} />
+      </div>
+      <div className={styles.legendsContainer}>
+        <div className={styles.legend}>
+          <span></span>Yellow
+        </div>
+        <div className={styles.legend}>
+          <span></span>Red
+        </div>
+        <div className={styles.legend}>
+          <span></span>Grey
+        </div>
       </div>
     </>
   );

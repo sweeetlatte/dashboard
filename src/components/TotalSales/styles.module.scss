@@ -32,5 +32,47 @@
 .chartContainer {
   display: flex;
   justify-content: center;
-  height: 330px;
+  height: 300px;
+}
+
+.legendsContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 16px;
+
+  > * + * {
+    margin-left: 12px;
+  }
+
+  > * {
+    display: flex;
+    align-items: center;
+
+    span {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      border-radius: $radius-circle;
+      margin-right: 4px;
+    }
+  }
+
+  :nth-child(1) {
+    span {
+      background-color: $primary;
+    }
+  }
+
+  :nth-child(2) {
+    span {
+      background-color: $secondary;
+    }
+  }
+
+  :nth-child(3) {
+    span {
+      background-color: $header-text;
+    }
+  }
 }
