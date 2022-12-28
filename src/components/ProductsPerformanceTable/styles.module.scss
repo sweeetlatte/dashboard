@@ -3,7 +3,6 @@
 
 .title {
   @include title;
-  padding-bottom: 24px;
 }
 
 table {
@@ -11,60 +10,55 @@ table {
   width: 100%;
   font-size: 14px;
 
-  tr {
-    border-bottom: 1px solid $neutral3;
+  tbody {
+    tr {
+      border-bottom: 1px solid $neutral3;
 
-    &:nth-child(1),
-    &:last-child {
-      border-bottom: none;
-    }
-
-    &:nth-child(2) {
-      td {
-        padding-top: 0;
-      }
-    }
-
-    &:last-child {
-      td {
-        padding-top: 16px;
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  td {
-    padding: 16px 0;
-
-    &:nth-child(1) {
-      display: flex;
-      align-items: center;
-
-      > * + * {
-        margin-left: 16px;
+      &:last-child {
+        border-bottom: none;
       }
 
-      .imgContainer {
-        width: 90px;
-        height: 70px;
-
-        img {
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
-          border-radius: $radius-active-tab;
+      &:last-child {
+        td {
+          padding-top: 16px;
+          padding-bottom: 0;
         }
       }
+    }
 
-      .textContainer {
-        .name {
-          font-size: 16px;
-          font-weight: 600;
+    td {
+      padding: 18px 0;
+
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+
+        > * + * {
+          margin-left: 16px;
         }
 
-        .ingres {
-          @include sub-text;
-          padding-top: 5px;
+        .imgContainer {
+          width: 90px;
+          height: 70px;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: $radius-active-tab;
+          }
+        }
+
+        .textContainer {
+          .name {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .ingres {
+            @include sub-text;
+            padding-top: 5px;
+          }
         }
       }
     }
@@ -79,15 +73,32 @@ table {
         margin-bottom: 6px;
         border-radius: $radius-active-tab;
         background-color: var(--icon-bg);
-        
-        .progressBar {
-          position: absolute;
-          left: 0;
+
+        > * {
+          position: static;
+          margin-bottom: 10px;
           display: inline-block;
           height: 3px;
           width: 90px;
           border-radius: $radius-active-tab;
-          background-color: $primary;
+        }
+
+        .progressBar {
+          &_excellent {
+            background-color: $primary;
+          }
+
+          &_good {
+            background-color: $blue;
+          }
+
+          &_average {
+            background-color: $yellow;
+          }
+
+          &_poor {
+            background-color: $red;
+          }
         }
       }
 
