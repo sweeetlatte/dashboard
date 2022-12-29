@@ -15,11 +15,15 @@
     }
 
     .legend {
+      display: flex;
+      align-items: center;
+
       span {
         display: inline-block;
-        width: 20px;
-        height: 8px;
+        width: 12px;
+        height: 12px;
         margin-right: 5px;
+        border-radius: $radius-circle;
       }
 
       &:nth-child(1) {

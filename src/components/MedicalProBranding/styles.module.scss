@@ -29,7 +29,7 @@
 
 .detailsContainer {
   display: flex;
-  border-bottom: solid 1px var(--secondary-text-2);
+  border-bottom: solid 1px $neutral3;
 
   > * {
     flex-basis: 33.33%;
@@ -45,7 +45,7 @@
   .detail {
     &:nth-child(2),
     &:nth-child(3) {
-      border-left: solid 1px var(--secondary-text-2);
+      border-left: solid 1px $neutral3;
       padding-left: 8px;
       padding-bottom: 18px;
     }
@@ -54,7 +54,7 @@
 
 .teamsContainer {
   padding-bottom: 20px;
-  border-bottom: solid 1px var(--secondary-text-2);
+  border-bottom: solid 1px $neutral3;
 
   .teams {
     display: flex;
@@ -67,7 +67,7 @@
 
 .leadersContainer {
   padding-bottom: 20px;
-  border-bottom: solid 1px var(--secondary-text-2);
+  border-bottom: solid 1px $neutral3;
 
   .avatarContainer {
     display: flex;

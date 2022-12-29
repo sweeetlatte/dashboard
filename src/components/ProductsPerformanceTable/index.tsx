@@ -9,7 +9,7 @@ export default function ProductsPerformanceTable() {
   const tableData = useAppSelector((state) => state.product.products);
 
   return (
-    <>
+    <div className={styles.productsTable}>
       <div className={styles.title}>Products Performance</div>
       <table>
         <thead>
@@ -82,6 +82,6 @@ export default function ProductsPerformanceTable() {
             ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }

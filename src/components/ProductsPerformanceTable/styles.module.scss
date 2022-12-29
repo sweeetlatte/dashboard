@@ -1,139 +1,138 @@
 @import '../../assets/styles/variables.scss';
 @import '../../assets/styles/index.scss';
 
-.title {
-  @include title;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 14px;
-
-  thead {
-    th {
-      padding: 0;
-      border-bottom: none;
-    }
+.productsTable {
+  .title {
+    @include title;
   }
 
-  tbody {
-    tr {
-      border-bottom: 1px solid $neutral3;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
 
-      &:last-child {
-        border-bottom: none;
-      }
-
-      &:last-child {
-        td {
-          padding-top: 16px;
-          padding-bottom: 0;
-        }
-      }
+    thead {
+      display: none;
     }
 
-    td {
-      padding: 18px 0;
+    tbody {
+      tr {
+        border-bottom: 1px solid $neutral3;
 
-      &:nth-child(2) .sold,
-      &:nth-child(3) .subtext {
-        @include sub-text;
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:last-child {
+          td {
+            padding-top: 16px;
+            padding-bottom: 0;
+          }
+        }
       }
 
-      &:nth-child(1) {
-        display: flex;
-        align-items: center;
+      td {
+        padding: 18px 0;
 
-        > * + * {
-          margin-left: 16px;
+        &:nth-child(2) .sold,
+        &:nth-child(3) .subtext {
+          @include sub-text;
         }
 
-        .imgContainer {
-          width: 90px;
-          height: 70px;
+        &:nth-child(1) {
+          display: flex;
+          align-items: center;
 
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+          > * + * {
+            margin-left: 16px;
+          }
+
+          .imgContainer {
+            width: 90px;
+            height: 70px;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              border-radius: $radius-active-tab;
+            }
+          }
+
+          .textContainer {
+            .name {
+              font-size: 16px;
+              font-weight: 600;
+            }
+
+            .ingres {
+              @include sub-text;
+              padding-top: 5px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .fullBar {
+            position: relative;
+            display: inline-block;
+            height: 3px;
+            width: 100px;
+            margin-top: 12px;
+            margin-bottom: 6px;
             border-radius: $radius-active-tab;
+            background-color: var(--icon-bg);
+
+            > * {
+              position: static;
+              margin-bottom: 10px;
+              display: inline-block;
+              height: 3px;
+              width: 90px;
+              border-radius: $radius-active-tab;
+            }
+
+            .progressBar {
+              &_excellent {
+                background-color: $primary;
+              }
+
+              &_good {
+                background-color: $blue;
+              }
+
+              &_average {
+                background-color: $yellow;
+              }
+
+              &_poor {
+                background-color: $red;
+              }
+            }
           }
         }
 
-        .textContainer {
-          .name {
-            font-size: 16px;
-            font-weight: 600;
-          }
-
-          .ingres {
-            @include sub-text;
+        &:nth-child(3) {
+          .number {
+            @include sub-title;
             padding-top: 5px;
           }
         }
-      }
 
-      &:nth-child(2) {
-        .fullBar {
-          position: relative;
-          display: inline-block;
-          height: 3px;
-          width: 100px;
-          margin-top: 12px;
-          margin-bottom: 6px;
-          border-radius: $radius-active-tab;
-          background-color: var(--icon-bg);
-
+        &:nth-child(4) {
           > * {
-            position: static;
-            margin-bottom: 10px;
-            display: inline-block;
-            height: 3px;
-            width: 90px;
-            border-radius: $radius-active-tab;
+            cursor: pointer;
           }
 
-          .progressBar {
-            &_excellent {
-              background-color: $primary;
+          .tooltipContainer {
+            @include tooltip-container;
+
+            .tooltip {
+              @include tooltip;
+              left: 0;
+              bottom: 141%;
+              margin-left: -28px;
             }
-
-            &_good {
-              background-color: $blue;
-            }
-
-            &_average {
-              background-color: $yellow;
-            }
-
-            &_poor {
-              background-color: $red;
-            }
-          }
-        }
-      }
-
-      &:nth-child(3) {
-        .number {
-          @include sub-title;
-          padding-top: 5px;
-        }
-      }
-
-      &:nth-child(4) {
-        > * {
-          cursor: pointer;
-        }
-
-        .tooltipContainer {
-          @include tooltip-container;
-
-          .tooltip {
-            @include tooltip;
-            left: 0;
-            bottom: 141%;
-            margin-left: -28px;
           }
         }
       }
