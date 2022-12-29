@@ -1,25 +1,19 @@
 import { useState } from 'react';
 
-import { toggleMask } from '../../redux/actions';
-import { useAppDispatch, useAppSelector } from '../../redux/store';
+import useComponentVisible from '../../utils/hooks/useComponentVisible';
 import styles from './styles.module.scss';
 
-interface Props {
-  componentId: number;
-}
-
-export default function ButtonMore({ componentId }: Props) {
-  const dispatch = useAppDispatch();
-  const mask = useAppSelector((state) => state.mask);
+export default function ButtonMore() {
+  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={ref}>
       <div
         className={styles.dotsContainer}
         onClick={() => {
           setShowDropdown(true);
-          dispatch(toggleMask());
+          setIsComponentVisible(!isComponentVisible);
         }}
       >
         <div className={styles.dots}>
@@ -29,12 +23,12 @@ export default function ButtonMore({ componentId }: Props) {
         </div>
         <span className={styles.tooltip}>More</span>
       </div>
-      {showDropdown && mask ? (
+      {showDropdown && isComponentVisible ? (
         <div
           className={styles.dropdownContainer}
           onClick={() => {
             setShowDropdown(false);
-            dispatch(toggleMask());
+            setIsComponentVisible(false);
           }}
         >
           <div>Action</div>

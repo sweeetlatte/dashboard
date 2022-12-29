@@ -1,4 +1,5 @@
 import latte from '../../assets/images/avatar.jpg';
+import ButtonMore from '../ButtonMore';
 import styles from './styles.module.scss';
 
 export default function DailyNews() {
@@ -6,7 +7,7 @@ export default function DailyNews() {
     <>
       <div className={styles.title}>
         <p>Daily News</p>
-        <div>...</div>
+        <ButtonMore />
       </div>
       <div className={styles.imgContainer}>
         <img src={latte} alt='' />

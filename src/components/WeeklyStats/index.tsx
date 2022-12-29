@@ -71,14 +71,12 @@ const data = {
 };
 
 export default function WeeklyStats() {
-  const componentId = 2;
-
   return (
     <>
       <div className={styles.topContainer}>
         <div className={styles.title}>
           <div>Weekly Stats</div>
-          <ButtonMore componentId={componentId} />
+          <ButtonMore />
         </div>
         <div className={styles.rowContainer}>
           <div className={styles.row}>
