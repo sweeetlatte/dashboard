@@ -91,12 +91,11 @@ export default function AppRoutes() {
               <Route path={APP_ROUTE.COLUMN_CHART} element={<ColumnChart />} />
               <Route path={APP_ROUTE.CANDLESTICK_CHART} element={<CandlestickChart />} />
               <Route path={APP_ROUTE.RADIAL_RADAR_CHART} element={<RadialbarRadarChart />} />
-
-              <Route path={APP_ROUTE.SIGN_IN} element={<SignIn />} />
-              <Route path={APP_ROUTE.SIGN_UP} element={<SignUp />} />
-              <Route path={APP_ROUTE.RESET_PASSWORD} element={<ResetPassword />} />
-              <Route path={APP_ROUTE.ERROR} element={<Error />} />
             </Route>
+            <Route path={APP_ROUTE.SIGN_IN} element={<SignIn />} />
+            <Route path={APP_ROUTE.SIGN_UP} element={<SignUp />} />
+            <Route path={APP_ROUTE.RESET_PASSWORD} element={<ResetPassword />} />
+            <Route path='*' element={<Error />} />
           </Route>
         </Routes>
       </Router>
